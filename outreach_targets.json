@@ -1,52 +1,182 @@
 [
   {
-    "company": "SubShield Internal Verification Test",
-    "contact_name": "Ranjeet Sah",
-    "role": "Founder & Lead Architect",
-    "email": "guptakumarranjeet150@gmail.com",
+    "company": "SpawGlass Contractors Inc",
+    "contact_name": "Joel Stone",
+    "role": "VP of Operations & Pre-Construction",
+    "email": "estimating@spawglass.com",
     "city": "Austin",
     "state": "TX",
-    "project_name": "Austin Commercial Hub Phase 2",
-    "notes": "Internal verification telemetry proof"
+    "notes": "Commercial Healthcare, Higher Education, Municipal (~45 active trade subs)"
   },
   {
-    "company": "Apex Commercial Construction Group",
-    "contact_name": "David Henderson",
-    "role": "VP of Operations",
-    "email": "dhenderson@apexcommercialtx.com",
+    "company": "Rogers-O'Brien Construction",
+    "contact_name": "Justin Prewitt",
+    "role": "Director of Field Operations",
+    "email": "bids@rogers-obrien.com",
     "city": "Dallas",
     "state": "TX",
-    "project_name": "Legacy West Retail Center",
-    "notes": "45 active subcontractors, heavy framing and MEP"
+    "notes": "Commercial High-Rise, Industrial, Life Sciences (~60 active trade subs)"
   },
   {
-    "company": "Sterling Builders & Development",
-    "contact_name": "Mark Gallagher",
-    "role": "Director of Field Operations",
-    "email": "mgallagher@sterlingbuildersfl.com",
+    "company": "Joeris General Contractors Ltd",
+    "contact_name": "Ken Fuller",
+    "role": "Chief Operating Officer",
+    "email": "estimating@joeris.com",
+    "city": "San Antonio",
+    "state": "TX",
+    "notes": "K-12 Education, Retail, Commercial Office (~40 active trade subs)"
+  },
+  {
+    "company": "Austin Commercial LP",
+    "contact_name": "Matthew Ballew",
+    "role": "VP of Risk Management",
+    "email": "bids@austincommercial.com",
+    "city": "Dallas",
+    "state": "TX",
+    "notes": "Aviation, Hospitality, Corporate Commercial (~80 active trade subs)"
+  },
+  {
+    "company": "The Beck Group",
+    "contact_name": "Chad Schieber",
+    "role": "Director of Risk & Preconstruction",
+    "email": "estimating@beckgroup.com",
+    "city": "Dallas",
+    "state": "TX",
+    "notes": "Architecture & Commercial Construction Management (~55 active trade subs)"
+  },
+  {
+    "company": "Anslow Bryant Construction Ltd",
+    "contact_name": "Michael Aquino",
+    "role": "Pre-Construction & Estimating Director",
+    "email": "michael.aquino@anslowbryant.com",
+    "city": "Houston",
+    "state": "TX",
+    "notes": "Commercial Interiors, Healthcare, Religious (~35 active trade subs)"
+  },
+  {
+    "company": "Teal Construction Company",
+    "contact_name": "David Teal",
+    "role": "President & Managing Principal",
+    "email": "estimating@tealcon.com",
+    "city": "Houston",
+    "state": "TX",
+    "notes": "Commercial Retail, Light Industrial, Office (~30 active trade subs)"
+  },
+  {
+    "company": "Structura Inc",
+    "contact_name": "Rusty Morgan",
+    "role": "Managing Principal & Operations Lead",
+    "email": "marketing@structurainc.com",
+    "city": "Austin",
+    "state": "TX",
+    "notes": "Commercial Office, Tech Hub, Advanced Manufacturing (~40 active trade subs)"
+  },
+  {
+    "company": "Moss & Associates LLC",
+    "contact_name": "Brett Atkinson",
+    "role": "President - Central Florida Operations",
+    "email": "estimating@mosscm.com",
     "city": "Tampa",
     "state": "FL",
-    "project_name": "Bayshore Multi-Family Phase 1",
-    "notes": "Commercial multi-family, recent subrogation audit"
+    "notes": "Multi-Family, Solar EPC, Commercial Mixed-Use (~70 active trade subs)"
   },
   {
-    "company": "Pinnacle Design-Build Contractors",
-    "contact_name": "Sarah Jenkins",
-    "role": "Project Executive & Risk Lead",
-    "email": "sjenkins@pinnacledesignbuild.com",
-    "city": "Denver",
-    "state": "CO",
-    "project_name": "RiNo Tech Center",
-    "notes": "High tech commercial, uses Procore"
+    "company": "Plaza Construction Group",
+    "contact_name": "Brad Meltzer",
+    "role": "President - Southeast Operations",
+    "email": "estimating@plazaconstruction.com",
+    "city": "Miami",
+    "state": "FL",
+    "notes": "Luxury Hospitality, High-Rise Residential (~65 active trade subs)"
   },
   {
-    "company": "Carolina Crest Contracting",
-    "contact_name": "Michael Vance",
-    "role": "Chief Operating Officer",
-    "email": "mvance@carolinacrestnc.com",
+    "company": "Williams Company Southeast",
+    "contact_name": "Taylor Yarborough",
+    "role": "Director of Field Operations",
+    "email": "estimating@willco.com",
+    "city": "Orlando",
+    "state": "FL",
+    "notes": "Industrial Distribution, Retail, Senior Living (~35 active trade subs)"
+  },
+  {
+    "company": "Stellar Group Inc",
+    "contact_name": "Brian Kappele",
+    "role": "President & Chief Operating Officer",
+    "email": "bids@stellar.net",
+    "city": "Jacksonville",
+    "state": "FL",
+    "notes": "Industrial Food Processing, Cold Storage, Commercial (~75 active trade subs)"
+  },
+  {
+    "company": "Choate Construction Company",
+    "contact_name": "Dave Priester",
+    "role": "President - Carolinas Division",
+    "email": "estimating@choateco.com",
     "city": "Charlotte",
     "state": "NC",
-    "project_name": "South End Mixed-Use",
-    "notes": "Regional commercial GC, 35 trade subs"
+    "notes": "Life Sciences, Commercial Interiors, Industrial (~50 active trade subs)"
+  },
+  {
+    "company": "Shelco LLC",
+    "contact_name": "Edwin Wilson",
+    "role": "Chief Operating Officer",
+    "email": "bids@shelcollc.com",
+    "city": "Raleigh",
+    "state": "NC",
+    "notes": "Commercial Office, Healthcare, Advanced Tech (~45 active trade subs)"
+  },
+  {
+    "company": "Edifice LLC",
+    "contact_name": "Bryan Knupp",
+    "role": "Senior VP of Operations",
+    "email": "estimating@edificeinc.com",
+    "city": "Charlotte",
+    "state": "NC",
+    "notes": "Commercial Corporate, Municipal, Faith-Based (~40 active trade subs)"
+  },
+  {
+    "company": "Haydon Building Corp",
+    "contact_name": "Gary Haydon",
+    "role": "Chairman & Operations Lead",
+    "email": "estimating@haydonbc.com",
+    "city": "Phoenix",
+    "state": "AZ",
+    "notes": "Commercial Building, Heavy Civil, Water Infrastructure (~50 active trade subs)"
+  },
+  {
+    "company": "FCI Constructors Inc",
+    "contact_name": "Ed Forsman",
+    "role": "President & Chief Executive",
+    "email": "estimating@fciol.com",
+    "city": "Denver",
+    "state": "CO",
+    "notes": "K-12 Education, Commercial Healthcare, Municipal (~45 active trade subs)"
+  },
+  {
+    "company": "Saunders Construction Inc",
+    "contact_name": "Justin Cooper",
+    "role": "President & Chief Operating Officer",
+    "email": "bids@saundersinc.com",
+    "city": "Englewood",
+    "state": "CO",
+    "notes": "Commercial Mixed-Use, Higher Ed, Cultural (~60 active trade subs)"
+  },
+  {
+    "company": "Juneau Construction Company",
+    "contact_name": "Les Juneau",
+    "role": "President & Founder",
+    "email": "estimating@juneaucc.com",
+    "city": "Atlanta",
+    "state": "GA",
+    "notes": "Higher Education, Multi-Family, Commercial Adaptive Reuse (~45 active trade subs)"
+  },
+  {
+    "company": "Winter Construction",
+    "contact_name": "Brent Farmer",
+    "role": "Managing Director of Operations",
+    "email": "estimating@winter-construction.com",
+    "city": "Atlanta",
+    "state": "GA",
+    "notes": "Hospitality, Commercial Historic Renovation (~40 active trade subs)"
   }
 ]
