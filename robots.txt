@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /server.log
+
+Sitemap: https://ranjeet2063.github.io/subshield/sitemap.xml

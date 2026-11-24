@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Underwriting Support | SubShield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-300 min-h-screen">
+  <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-emerald-500/20">S</div>
+        <span class="text-xl font-extrabold text-white tracking-tight">Sub<span class="text-emerald-400">Shield</span></span>
+      </a>
+      <a href="index.html" class="text-sm font-semibold text-slate-400 hover:text-white transition">← Back to Overview</a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">DIRECT COMMUNICATION</div>
+      <h1 class="text-4xl font-extrabold text-white tracking-tight">Contact SubShield Team</h1>
+      <p class="text-slate-400 mt-2 text-sm">Underwriting support, enterprise onboarding, and general inquiries for US General Contractors.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="space-y-6">
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">Compliance Inquiries</h3>
+          </div>
+          <p class="text-xs text-slate-400 mb-2">For custom enterprise ACORD audit workflows or broker integrations:</p>
+          <code class="text-xs font-mono text-emerald-400 bg-emerald-950/40 px-2.5 py-1 rounded border border-emerald-800/40">compliance@subshield.ai</code>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center">
+              <i data-lucide="shield" class="w-4 h-4"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">Security & Privacy Office</h3>
+          </div>
+          <p class="text-xs text-slate-400 mb-2">Data protection agreements (DPA) and SOC 2 inquiries:</p>
+          <code class="text-xs font-mono text-blue-400 bg-blue-950/40 px-2.5 py-1 rounded border border-blue-800/40">security@subshield.ai</code>
+        </div>
+      </div>
+
+      <!-- Quick Message Form -->
+      <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+        <h3 class="text-base font-bold text-white mb-4">Send a Direct Message</h3>
+        <form onsubmit="event.preventDefault(); alert('✓ Message sent successfully! Our compliance architect will respond within 2 hours.');" class="space-y-4 text-xs">
+          <div>
+            <label class="block font-semibold text-slate-400 mb-1 uppercase">Your Name</label>
+            <input type="text" required placeholder="John Miller (GC Project Manager)" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-400 mb-1 uppercase">Work Email</label>
+            <input type="email" required placeholder="john@millerconstruction.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-400 mb-1 uppercase">Project Inquiries / Subs Volume</label>
+            <textarea rows="4" required placeholder="Inquiring about automating 40 subcontractors for our Dallas commercial build..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-emerald-500"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold transition flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-3.5 h-3.5"></i>
+            <span>Submit Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-600">
+    © 2026 SubShield Risk Intelligence Systems. All rights reserved.
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

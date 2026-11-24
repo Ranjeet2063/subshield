@@ -4,6 +4,10 @@ __pycache__/
 tunnel.log
 cloudflare_tunnel.log
 db.json
+auth_db.json
+subscribers.json
+subscribers.csv
+test_auth_*.json
 .vault_credentials.json
 .env
 *.env

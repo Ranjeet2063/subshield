@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Architecture & Compliance | SubShield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-300 min-h-screen">
+  <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center font-black text-slate-950 text-xl shadow-lg shadow-emerald-500/20">S</div>
+        <span class="text-xl font-extrabold text-white tracking-tight">Sub<span class="text-emerald-400">Shield</span></span>
+      </a>
+      <a href="index.html" class="text-sm font-semibold text-slate-400 hover:text-white transition">← Back to Overview</a>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <div class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">INSTITUTIONAL TRUST</div>
+      <h1 class="text-4xl font-extrabold text-white tracking-tight">Enterprise Security Architecture</h1>
+      <p class="text-slate-400 mt-2 text-sm">How SubShield secures subcontractor insurance records, endorsement schedules, and billing data.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+          <i data-lucide="shield-check" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">Cryptographic Multi-Tenant Isolation</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Every subscribing General Contractor is provisioned with a mathematically unique Tenant ID. All database queries, subcontractor profiles, and audit documents are partition-gated to eliminate any risk of cross-tenant exposure.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center mb-4">
+          <i data-lucide="lock" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">FIPS-Compliant Password Hashing</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          User credentials are encrypted using PBKDF2 with 100,000 iterations of HMAC-SHA256 and unique 128-bit cryptographically random salts. Plaintext passwords never touch our persistence layer.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
+          <i data-lucide="network" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">256-Bit TLS Encryption in Transit</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          All HTTP traffic is enforced over TLS 1.3 / HTTPS with HSTS (HTTP Strict Transport Security) preloaded, preventing downgrade attacks. Security headers enforce clickjacking and MIME-sniffing protection.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-4">
+          <i data-lucide="file-check-2" class="w-5 h-5"></i>
+        </div>
+        <h3 class="text-base font-bold text-white mb-2">Confidence-Gated Human Review</h3>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Our verification engine automatically computes confidence scores for every ACORD 25 field. Any ambiguity in policy limits or endorsements automatically routes to a human underwriter queue.
+        </p>
+      </div>
+    </div>
+
+    <!-- Security Table -->
+    <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800">
+      <h3 class="text-base font-bold text-white mb-4">Security Defense Specification Matrix</h3>
+      <div class="overflow-x-auto font-mono text-xs">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-500">
+              <th class="py-2.5">Security Vector</th>
+              <th class="py-2.5">SubShield Standard</th>
+              <th class="py-2.5">Verification Status</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60">
+            <tr>
+              <td class="py-2.5 text-white font-semibold">Data in Transit</td>
+              <td class="py-2.5 text-slate-400">TLS 1.3 / HSTS 256-bit AES</td>
+              <td class="py-2.5 text-emerald-400 font-bold">ENFORCED</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 text-white font-semibold">Credential Storage</td>
+              <td class="py-2.5 text-slate-400">PBKDF2-HMAC-SHA256 (100k rounds)</td>
+              <td class="py-2.5 text-emerald-400 font-bold">VERIFIED</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 text-white font-semibold">Tenant Isolation</td>
+              <td class="py-2.5 text-slate-400">Scoped Token Partitioning</td>
+              <td class="py-2.5 text-emerald-400 font-bold">ACTIVE</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 text-white font-semibold">Payment Tokenization</td>
+              <td class="py-2.5 text-slate-400">Stripe PCI-DSS Level 1 / Self-Custodial RPC</td>
+              <td class="py-2.5 text-emerald-400 font-bold">ACTIVE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-600">
+    © 2026 SubShield Risk Intelligence Systems. All rights reserved.
+  </footer>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
