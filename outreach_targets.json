@@ -358,5 +358,176 @@
     "city": "Seattle",
     "state": "WA",
     "notes": "Commercial Office, Education, Data Centers (~55 active trade subs)"
+  },
+  {
+    "company": "Martin-Harris Construction",
+    "contact_name": "Guy Martin",
+    "role": "President",
+    "email": "estimating@martinharris.com",
+    "city": "Las Vegas",
+    "state": "NV",
+    "notes": "Hospitality, Commercial Gaming, Industrial (~55 active trade subs)"
+  },
+  {
+    "company": "Layton Construction LLC",
+    "contact_name": "David Layton",
+    "role": "President & CEO",
+    "email": "bids@laytonconstruction.com",
+    "city": "Sandy",
+    "state": "UT",
+    "notes": "Healthcare, Commercial Hospitality, Industrial (~80 active trade subs)"
+  },
+  {
+    "company": "Okland Construction Company",
+    "contact_name": "Brett Okland",
+    "role": "President",
+    "email": "estimating@okland.com",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "notes": "Higher Ed, Commercial Office, High-Tech (~60 active trade subs)"
+  },
+  {
+    "company": "Jacobsen Construction Company",
+    "contact_name": "Gary Ellis",
+    "role": "President & CEO",
+    "email": "estimating@jacobsenconstruction.com",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "notes": "Civic, Healthcare, Historic Restoration (~50 active trade subs)"
+  },
+  {
+    "company": "HITT Contracting Inc",
+    "contact_name": "Kim Roy",
+    "role": "Chief Executive Officer",
+    "email": "estimating@hitt.com",
+    "city": "Falls Church",
+    "state": "VA",
+    "notes": "Data Centers, Commercial Corporate Interiors, Healthcare (~85 active trade subs)"
+  },
+  {
+    "company": "Clark Construction Group",
+    "contact_name": "Robert Moser",
+    "role": "President & CEO",
+    "email": "bids@clarkconstruction.com",
+    "city": "Bethesda",
+    "state": "MD",
+    "notes": "Aviation, Sports & Entertainment, Mega Commercial (~95 active trade subs)"
+  },
+  {
+    "company": "James G. Davis Construction Corp",
+    "contact_name": "James Davis",
+    "role": "President & CEO",
+    "email": "estimating@davisconstruction.com",
+    "city": "Rockville",
+    "state": "MD",
+    "notes": "Commercial Headquarters, Higher Ed, Multi-Family (~60 active trade subs)"
+  },
+  {
+    "company": "Whiting-Turner Contracting Company",
+    "contact_name": "Timothy Regan",
+    "role": "President & CEO",
+    "email": "bids@whiting-turner.com",
+    "city": "Baltimore",
+    "state": "MD",
+    "notes": "Commercial Mixed-Use, Life Science, Tech (~110 active trade subs)"
+  },
+  {
+    "company": "Harkins Builders Inc",
+    "contact_name": "Gary Garofalo",
+    "role": "President & COO",
+    "email": "estimating@harkinsbuilders.com",
+    "city": "Columbia",
+    "state": "MD",
+    "notes": "Multi-Family, Senior Living, Commercial (~50 active trade subs)"
+  },
+  {
+    "company": "Torcon Inc",
+    "contact_name": "Joseph Torcivia",
+    "role": "Co-President",
+    "email": "estimating@torcon.com",
+    "city": "Red Bank",
+    "state": "NJ",
+    "notes": "Pharma Life Sciences, Healthcare, Commercial Office (~65 active trade subs)"
+  },
+  {
+    "company": "Structure Tone LLC",
+    "contact_name": "James Donaghy",
+    "role": "Executive Chairman",
+    "email": "bids@structuretone.com",
+    "city": "New York",
+    "state": "NY",
+    "notes": "Commercial Fit-Outs, Mission Critical, Tech (~90 active trade subs)"
+  },
+  {
+    "company": "Barton Malow Holdings LLC",
+    "contact_name": "Ryan Maibach",
+    "role": "President & CEO",
+    "email": "bids@bartonmalow.com",
+    "city": "Southfield",
+    "state": "MI",
+    "notes": "Automotive, Industrial EV Plants, Sports Venues (~85 active trade subs)"
+  },
+  {
+    "company": "Walbridge Aldinger LLC",
+    "contact_name": "Michael Haller",
+    "role": "Chief Executive Officer",
+    "email": "estimating@walbridge.com",
+    "city": "Detroit",
+    "state": "MI",
+    "notes": "Heavy Industrial, Commercial Aviation, Advanced Manufacturing (~75 active trade subs)"
+  },
+  {
+    "company": "F.A. Wilhelm Construction Co",
+    "contact_name": "Phil Wilhelm",
+    "role": "President & CEO",
+    "email": "estimating@fawilhelm.com",
+    "city": "Indianapolis",
+    "state": "IN",
+    "notes": "Commercial Parking Structures, Higher Ed, Industrial (~55 active trade subs)"
+  },
+  {
+    "company": "Bowen Engineering Corp",
+    "contact_name": "Mark Bowen",
+    "role": "President",
+    "email": "estimating@bowenengineering.com",
+    "city": "Indianapolis",
+    "state": "IN",
+    "notes": "Water/Wastewater, Power Infrastructure, Commercial Industrial (~45 active trade subs)"
+  },
+  {
+    "company": "J.E. Dunn Construction Group",
+    "contact_name": "Gordon Lansford",
+    "role": "President & CEO",
+    "email": "bids@jedunn.com",
+    "city": "Kansas City",
+    "state": "MO",
+    "notes": "Commercial Aviation, Healthcare, Mission Critical (~95 active trade subs)"
+  },
+  {
+    "company": "Alberici Corporation",
+    "contact_name": "Peter Kelley",
+    "role": "President & CEO",
+    "email": "estimating@alberici.com",
+    "city": "St. Louis",
+    "state": "MO",
+    "notes": "Automotive, Energy, Water, Heavy Commercial (~70 active trade subs)"
+  },
+  {
+    "company": "Clayco Inc",
+    "contact_name": "Bob Clark",
+    "role": "Executive Chairman & Founder",
+    "email": "estimating@claycorp.com",
+    "city": "Chicago",
+    "state": "IL",
+    "notes": "Industrial Logistics, Corporate Office, Multi-Family (~85 active trade subs)"
+  },
+  {
+    "company": "Brinkmann Constructors",
+    "contact_name": "Brian Brinkmann",
+    "role": "President",
+    "email": "estimating@brinkmannconstructors.com",
+    "city": "Chesterfield",
+    "state": "MO",
+    "notes": "Senior Living, Commercial Retail, Warehouse (~50 active trade subs)"
   }
 ]

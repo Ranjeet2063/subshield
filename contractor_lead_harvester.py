@@ -567,6 +567,265 @@ PRIMARY_CONTRACTORS = [
         "phone": "+1 (206) 622-0500",
         "estimating_email": "estimating@lewisbuilds.com",
         "compliance_email": "info@lewisbuilds.com"
+    },
+
+    # Nevada & Utah (Las Vegas, Salt Lake City)
+    {
+        "company": "Martin-Harris Construction",
+        "domain": "martinharris.com",
+        "contact_name": "Guy Martin",
+        "role": "President",
+        "city": "Las Vegas",
+        "state": "NV",
+        "estimated_subs": 55,
+        "specialty": "Hospitality, Commercial Gaming, Industrial",
+        "phone": "+1 (702) 385-5257",
+        "estimating_email": "estimating@martinharris.com",
+        "compliance_email": "info@martinharris.com"
+    },
+    {
+        "company": "Layton Construction LLC",
+        "domain": "laytonconstruction.com",
+        "contact_name": "David Layton",
+        "role": "President & CEO",
+        "city": "Sandy",
+        "state": "UT",
+        "estimated_subs": 80,
+        "specialty": "Healthcare, Commercial Hospitality, Industrial",
+        "phone": "+1 (801) 568-9090",
+        "estimating_email": "bids@laytonconstruction.com",
+        "compliance_email": "info@laytonconstruction.com"
+    },
+    {
+        "company": "Okland Construction Company",
+        "domain": "okland.com",
+        "contact_name": "Brett Okland",
+        "role": "President",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "estimated_subs": 60,
+        "specialty": "Higher Ed, Commercial Office, High-Tech",
+        "phone": "+1 (801) 486-0144",
+        "estimating_email": "estimating@okland.com",
+        "compliance_email": "certs@okland.com"
+    },
+    {
+        "company": "Jacobsen Construction Company",
+        "domain": "jacobsenconstruction.com",
+        "contact_name": "Gary Ellis",
+        "role": "President & CEO",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "estimated_subs": 50,
+        "specialty": "Civic, Healthcare, Historic Restoration",
+        "phone": "+1 (801) 973-5900",
+        "estimating_email": "estimating@jacobsenconstruction.com",
+        "compliance_email": "info@jacobsenconstruction.com"
+    },
+
+    # Virginia & DC Metro (Falls Church, Bethesda, Rockville)
+    {
+        "company": "HITT Contracting Inc",
+        "domain": "hitt.com",
+        "contact_name": "Kim Roy",
+        "role": "Chief Executive Officer",
+        "city": "Falls Church",
+        "state": "VA",
+        "estimated_subs": 85,
+        "specialty": "Data Centers, Commercial Corporate Interiors, Healthcare",
+        "phone": "+1 (703) 846-9000",
+        "estimating_email": "estimating@hitt.com",
+        "compliance_email": "subcontractors@hitt.com"
+    },
+    {
+        "company": "Clark Construction Group",
+        "domain": "clarkconstruction.com",
+        "contact_name": "Robert Moser",
+        "role": "President & CEO",
+        "city": "Bethesda",
+        "state": "MD",
+        "estimated_subs": 95,
+        "specialty": "Aviation, Sports & Entertainment, Mega Commercial",
+        "phone": "+1 (301) 272-8100",
+        "estimating_email": "bids@clarkconstruction.com",
+        "compliance_email": "certs@clarkconstruction.com"
+    },
+    {
+        "company": "James G. Davis Construction Corp",
+        "domain": "davisconstruction.com",
+        "contact_name": "James Davis",
+        "role": "President & CEO",
+        "city": "Rockville",
+        "state": "MD",
+        "estimated_subs": 60,
+        "specialty": "Commercial Headquarters, Higher Ed, Multi-Family",
+        "phone": "+1 (301) 881-2990",
+        "estimating_email": "estimating@davisconstruction.com",
+        "compliance_email": "info@davisconstruction.com"
+    },
+
+    # Maryland & Mid-Atlantic (Baltimore, Columbia)
+    {
+        "company": "Whiting-Turner Contracting Company",
+        "domain": "whiting-turner.com",
+        "contact_name": "Timothy Regan",
+        "role": "President & CEO",
+        "city": "Baltimore",
+        "state": "MD",
+        "estimated_subs": 110,
+        "specialty": "Commercial Mixed-Use, Life Science, Tech",
+        "phone": "+1 (410) 821-1100",
+        "estimating_email": "bids@whiting-turner.com",
+        "compliance_email": "subcontractors@whiting-turner.com"
+    },
+    {
+        "company": "Harkins Builders Inc",
+        "domain": "harkinsbuilders.com",
+        "contact_name": "Gary Garofalo",
+        "role": "President & COO",
+        "city": "Columbia",
+        "state": "MD",
+        "estimated_subs": 50,
+        "specialty": "Multi-Family, Senior Living, Commercial",
+        "phone": "+1 (410) 750-2600",
+        "estimating_email": "estimating@harkinsbuilders.com",
+        "compliance_email": "info@harkinsbuilders.com"
+    },
+
+    # New Jersey & New York
+    {
+        "company": "Torcon Inc",
+        "domain": "torcon.com",
+        "contact_name": "Joseph Torcivia",
+        "role": "Co-President",
+        "city": "Red Bank",
+        "state": "NJ",
+        "estimated_subs": 65,
+        "specialty": "Pharma Life Sciences, Healthcare, Commercial Office",
+        "phone": "+1 (732) 704-9800",
+        "estimating_email": "estimating@torcon.com",
+        "compliance_email": "info@torcon.com"
+    },
+    {
+        "company": "Structure Tone LLC",
+        "domain": "structuretone.com",
+        "contact_name": "James Donaghy",
+        "role": "Executive Chairman",
+        "city": "New York",
+        "state": "NY",
+        "estimated_subs": 90,
+        "specialty": "Commercial Fit-Outs, Mission Critical, Tech",
+        "phone": "+1 (212) 481-6100",
+        "estimating_email": "bids@structuretone.com",
+        "compliance_email": "certs@structuretone.com"
+    },
+
+    # Michigan & Indiana (Detroit, Indianapolis)
+    {
+        "company": "Barton Malow Holdings LLC",
+        "domain": "bartonmalow.com",
+        "contact_name": "Ryan Maibach",
+        "role": "President & CEO",
+        "city": "Southfield",
+        "state": "MI",
+        "estimated_subs": 85,
+        "specialty": "Automotive, Industrial EV Plants, Sports Venues",
+        "phone": "+1 (248) 436-5000",
+        "estimating_email": "bids@bartonmalow.com",
+        "compliance_email": "info@bartonmalow.com"
+    },
+    {
+        "company": "Walbridge Aldinger LLC",
+        "domain": "walbridge.com",
+        "contact_name": "Michael Haller",
+        "role": "Chief Executive Officer",
+        "city": "Detroit",
+        "state": "MI",
+        "estimated_subs": 75,
+        "specialty": "Heavy Industrial, Commercial Aviation, Advanced Manufacturing",
+        "phone": "+1 (313) 963-8000",
+        "estimating_email": "estimating@walbridge.com",
+        "compliance_email": "certs@walbridge.com"
+    },
+    {
+        "company": "F.A. Wilhelm Construction Co",
+        "domain": "fawilhelm.com",
+        "contact_name": "Phil Wilhelm",
+        "role": "President & CEO",
+        "city": "Indianapolis",
+        "state": "IN",
+        "estimated_subs": 55,
+        "specialty": "Commercial Parking Structures, Higher Ed, Industrial",
+        "phone": "+1 (317) 359-5411",
+        "estimating_email": "estimating@fawilhelm.com",
+        "compliance_email": "info@fawilhelm.com"
+    },
+    {
+        "company": "Bowen Engineering Corp",
+        "domain": "bowenengineering.com",
+        "contact_name": "Mark Bowen",
+        "role": "President",
+        "city": "Indianapolis",
+        "state": "IN",
+        "estimated_subs": 45,
+        "specialty": "Water/Wastewater, Power Infrastructure, Commercial Industrial",
+        "phone": "+1 (317) 842-2616",
+        "estimating_email": "estimating@bowenengineering.com",
+        "compliance_email": "info@bowenengineering.com"
+    },
+
+    # Missouri & Midwest (Kansas City, St. Louis)
+    {
+        "company": "J.E. Dunn Construction Group",
+        "domain": "jedunn.com",
+        "contact_name": "Gordon Lansford",
+        "role": "President & CEO",
+        "city": "Kansas City",
+        "state": "MO",
+        "estimated_subs": 95,
+        "specialty": "Commercial Aviation, Healthcare, Mission Critical",
+        "phone": "+1 (816) 474-8600",
+        "estimating_email": "bids@jedunn.com",
+        "compliance_email": "certs@jedunn.com"
+    },
+    {
+        "company": "Alberici Corporation",
+        "domain": "alberici.com",
+        "contact_name": "Peter Kelley",
+        "role": "President & CEO",
+        "city": "St. Louis",
+        "state": "MO",
+        "estimated_subs": 70,
+        "specialty": "Automotive, Energy, Water, Heavy Commercial",
+        "phone": "+1 (314) 733-2000",
+        "estimating_email": "estimating@alberici.com",
+        "compliance_email": "info@alberici.com"
+    },
+    {
+        "company": "Clayco Inc",
+        "domain": "claycorp.com",
+        "contact_name": "Bob Clark",
+        "role": "Executive Chairman & Founder",
+        "city": "Chicago",
+        "state": "IL",
+        "estimated_subs": 85,
+        "specialty": "Industrial Logistics, Corporate Office, Multi-Family",
+        "phone": "+1 (312) 659-7500",
+        "estimating_email": "estimating@claycorp.com",
+        "compliance_email": "info@claycorp.com"
+    },
+    {
+        "company": "Brinkmann Constructors",
+        "domain": "brinkmannconstructors.com",
+        "contact_name": "Brian Brinkmann",
+        "role": "President",
+        "city": "Chesterfield",
+        "state": "MO",
+        "estimated_subs": 50,
+        "specialty": "Senior Living, Commercial Retail, Warehouse",
+        "phone": "+1 (636) 537-9700",
+        "estimating_email": "estimating@brinkmannconstructors.com",
+        "compliance_email": "info@brinkmannconstructors.com"
     }
 ]
 
