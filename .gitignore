@@ -11,3 +11,4 @@ test_auth_*.json
 .vault_credentials.json
 .env
 *.env
+outreach_sent.json

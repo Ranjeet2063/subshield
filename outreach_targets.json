@@ -1,0 +1,52 @@
+[
+  {
+    "company": "SubShield Internal Verification Test",
+    "contact_name": "Ranjeet Sah",
+    "role": "Founder & Lead Architect",
+    "email": "guptakumarranjeet150@gmail.com",
+    "city": "Austin",
+    "state": "TX",
+    "project_name": "Austin Commercial Hub Phase 2",
+    "notes": "Internal verification telemetry proof"
+  },
+  {
+    "company": "Apex Commercial Construction Group",
+    "contact_name": "David Henderson",
+    "role": "VP of Operations",
+    "email": "dhenderson@apexcommercialtx.com",
+    "city": "Dallas",
+    "state": "TX",
+    "project_name": "Legacy West Retail Center",
+    "notes": "45 active subcontractors, heavy framing and MEP"
+  },
+  {
+    "company": "Sterling Builders & Development",
+    "contact_name": "Mark Gallagher",
+    "role": "Director of Field Operations",
+    "email": "mgallagher@sterlingbuildersfl.com",
+    "city": "Tampa",
+    "state": "FL",
+    "project_name": "Bayshore Multi-Family Phase 1",
+    "notes": "Commercial multi-family, recent subrogation audit"
+  },
+  {
+    "company": "Pinnacle Design-Build Contractors",
+    "contact_name": "Sarah Jenkins",
+    "role": "Project Executive & Risk Lead",
+    "email": "sjenkins@pinnacledesignbuild.com",
+    "city": "Denver",
+    "state": "CO",
+    "project_name": "RiNo Tech Center",
+    "notes": "High tech commercial, uses Procore"
+  },
+  {
+    "company": "Carolina Crest Contracting",
+    "contact_name": "Michael Vance",
+    "role": "Chief Operating Officer",
+    "email": "mvance@carolinacrestnc.com",
+    "city": "Charlotte",
+    "state": "NC",
+    "project_name": "South End Mixed-Use",
+    "notes": "Regional commercial GC, 35 trade subs"
+  }
+]

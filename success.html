@@ -25,7 +25,7 @@
       <div class="flex justify-between"><span class="text-slate-500">Status:</span><span class="text-emerald-400">Active (Auto-Renewing)</span></div>
     </div>
 
-    <a id="dash-link" href="/dashboard.html" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+    <a id="dash-link" href="dashboard.html" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
       <span>Access GC Compliance Dashboard</span>
       <i data-lucide="arrow-right" class="w-4 h-4"></i>
     </a>
@@ -38,7 +38,7 @@
     const comp = params.get('company') || 'Miller Construction LLC';
     document.getElementById('comp-val').textContent = decodeURIComponent(comp);
     document.getElementById('plan-val').textContent = plan.toUpperCase() === 'PRO' ? 'Pro ($399/mo)' : 'Starter ($199/mo)';
-    document.getElementById('dash-link').href = `/dashboard.html?plan=${plan}&company=${encodeURIComponent(comp)}`;
+    document.getElementById('dash-link').href = `dashboard.html?plan=${plan}&company=${encodeURIComponent(comp)}`;
   </script>
 </body>
 </html>
