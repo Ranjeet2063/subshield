@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubShield | Checkout Cancelled</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-6 antialiased">
+  <div class="max-w-md w-full bg-slate-900/80 border border-slate-800 rounded-3xl p-8 text-center backdrop-blur-md shadow-2xl">
+    <div class="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mx-auto mb-6">
+      <i data-lucide="alert-circle" class="w-8 h-8"></i>
+    </div>
+
+    <h1 class="text-2xl font-bold text-white mb-2">Checkout Incomplete</h1>
+    <p class="text-slate-400 text-sm mb-6">No charges were made to your card. You can return anytime to activate your automated COI compliance engine.</p>
+
+    <div class="flex flex-col gap-3">
+      <a href="/#pricing" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition">
+        Return to Plan Selection
+      </a>
+      <a href="/" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm transition">
+        Back to Home
+      </a>
+    </div>
+  </div>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

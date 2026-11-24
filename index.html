@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubShield | Automated Subcontractor Insurance & Lien-Waiver Compliance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-slate-950 antialiased">
+
+  <!-- Navigation -->
+  <header class="border-b border-slate-800/80 sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-400 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+          <i data-lucide="shield-check" class="w-6 h-6 text-slate-950 stroke-[2.5]"></i>
+        </div>
+        <span class="text-2xl font-bold tracking-tight text-white">Sub<span class="text-emerald-400">Shield</span></span>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#how-it-works" class="hover:text-white transition">How It Works</a>
+        <a href="#demo" class="hover:text-white transition">Live Scanner</a>
+        <a href="#calculator" class="hover:text-white transition">ROI Calculator</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="/dashboard.html" class="hidden sm:flex items-center gap-2 text-xs font-semibold px-3 py-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition">
+          <i data-lucide="layout-dashboard" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>GC Portal Demo</span>
+        </a>
+        <a href="#audit-modal" onclick="openModal()" class="px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm transition shadow-lg shadow-emerald-500/25 flex items-center gap-2">
+          <span>Free 5-COI Audit</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-24 pb-20 overflow-hidden">
+    <!-- Glow Gradients -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-8">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+        Built for General Contractors (5–50 Subs)
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+        Never Chase a Subcontractor for <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">Expired Insurance</span> Again.
+      </h1>
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
+        Drop any ACORD 25 certificate. SubShield instantly verifies policy limits, catches missing endorsements, and automatically chases expiring subs and their insurance brokers — eliminating surprise audit penalties.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="openModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base transition shadow-xl shadow-emerald-500/25 flex items-center justify-center gap-2.5">
+          <i data-lucide="file-check-2" class="w-5 h-5"></i>
+          <span>Run 100% Free 5-Sub Audit</span>
+        </button>
+        <a href="#demo" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-white font-semibold text-base transition flex items-center justify-center gap-2">
+          <i data-lucide="play" class="w-4 h-4 fill-current"></i>
+          <span>Try Interactive Scanner</span>
+        </a>
+      </div>
+
+      <!-- Quick Proof Metric -->
+      <div class="mt-14 pt-10 border-t border-slate-900 flex flex-wrap items-center justify-center gap-8 sm:gap-16 text-slate-500 text-sm font-medium">
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>ACORD 25 Instant OCR</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>Auto-Broker Chasing</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+          <span>Zero PHI / Zero Legal Hassle</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Scanner Demo -->
+  <section id="demo" class="py-20 border-t border-slate-900 bg-slate-950/60">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-bold text-white mb-3">See It in Action: Instant ACORD 25 Verification</h2>
+        <p class="text-slate-400 text-sm sm:text-base">Click a sample certificate below to see how SubShield parses policy limits and catches dangerous compliance holes.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Sample Selector & Input -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="glass-card p-6 rounded-2xl">
+            <h3 class="font-semibold text-white mb-4 text-sm flex items-center gap-2">
+              <i data-lucide="file-up" class="w-4 h-4 text-emerald-400"></i>
+              Select a Test Scenario:
+            </h3>
+
+            <div class="space-y-3">
+              <button onclick="loadScenario('pass')" id="btn-pass" class="w-full text-left p-3.5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 transition flex items-center justify-between">
+                <div>
+                  <div class="font-medium text-white text-sm">Summit Electrical LLC</div>
+                  <div class="text-xs text-slate-400">Commercial Subcontractor (Compliant)</div>
+                </div>
+                <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 text-emerald-400 text-xs font-semibold">100% Pass</span>
+              </button>
+
+              <button onclick="loadScenario('fail')" id="btn-fail" class="w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800 transition flex items-center justify-between">
+                <div>
+                  <div class="font-medium text-white text-sm">Apex Roofing & Siding</div>
+                  <div class="text-xs text-rose-400 font-mono">Missing Waiver + Expiring in 4 Days</div>
+                </div>
+                <span class="px-2.5 py-1 rounded-md bg-rose-500/20 text-rose-400 text-xs font-semibold">Critical Failure</span>
+              </button>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-800/80">
+              <div class="border-2 border-dashed border-slate-800 hover:border-emerald-500/50 transition rounded-xl p-6 text-center cursor-pointer group">
+                <i data-lucide="upload-cloud" class="w-8 h-8 mx-auto text-slate-500 group-hover:text-emerald-400 transition mb-2"></i>
+                <div class="text-xs font-medium text-slate-300">Drag & Drop Any Real ACORD 25 PDF</div>
+                <div class="text-[11px] text-slate-500 mt-1">Simulated parser runs 100% in your browser</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-Time Inspection Result -->
+        <div class="lg:col-span-7">
+          <div class="glass-card p-6 rounded-2xl relative overflow-hidden">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+              <div class="flex items-center gap-3">
+                <span id="res-badge" class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                  COMPLIANT
+                </span>
+                <span id="res-title" class="font-semibold text-white text-sm">Summit Electrical LLC</span>
+              </div>
+              <span id="hold-badge" class="hidden px-2.5 py-1 rounded bg-rose-500 text-slate-950 text-xs font-extrabold uppercase tracking-wider flex items-center gap-1">
+                <i data-lucide="alert-octagon" class="w-3.5 h-3.5"></i>
+                HOLD PAYMENT
+              </span>
+            </div>
+
+            <!-- Parsed Fields Grid -->
+            <div class="mt-6 grid grid-cols-2 gap-4 font-mono text-xs">
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                <div class="text-slate-500 text-[11px]">GENERAL LIABILITY LIMIT</div>
+                <div id="field-gl" class="text-white font-semibold text-sm mt-1">$1,000,000 / $2,000,000</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                <div class="text-slate-500 text-[11px]">POLICY EXPIRATION</div>
+                <div id="field-exp" class="text-emerald-400 font-semibold text-sm mt-1">Nov 18, 2027 (Active)</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                <div class="text-slate-500 text-[11px]">ADDITIONAL INSURED</div>
+                <div id="field-ai" class="text-emerald-400 font-semibold text-sm mt-1">Verified (Included)</div>
+              </div>
+              <div class="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                <div class="text-slate-500 text-[11px]">WAIVER OF SUBROGATION</div>
+                <div id="field-wos" class="text-emerald-400 font-semibold text-sm mt-1">Verified (Included)</div>
+              </div>
+            </div>
+
+            <!-- Automated Action Triggered -->
+            <div class="mt-6 pt-5 border-t border-slate-800">
+              <div class="text-xs font-semibold text-slate-300 mb-2 flex items-center gap-2">
+                <i data-lucide="bot" class="w-4 h-4 text-emerald-400"></i>
+                Automated System Action:
+              </div>
+              <div id="action-box" class="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 flex items-start gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i>
+                <span>All coverage requirements satisfied. Invoice cleared for project accounting release. Next expiration alert scheduled for 30 days prior.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Section -->
+  <section id="calculator" class="py-20 border-t border-slate-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="glass-card p-8 sm:p-12 rounded-3xl text-center relative overflow-hidden">
+        <h2 class="text-3xl font-bold text-white mb-3">How Much Does Manual COI Tracking Cost You?</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto mb-10">Most contractors underestimate their annual insurance audit penalties and lost office manager hours.</p>
+
+        <div class="max-w-md mx-auto mb-10 text-left">
+          <label class="block text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wider">Number of Active Subcontractors:</label>
+          <div class="flex items-center gap-4">
+            <input type="range" id="sub-slider" min="5" max="100" value="25" oninput="updateROI(this.value)" class="w-full h-2 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-emerald-500">
+            <span id="sub-count" class="font-mono font-bold text-xl text-emerald-400 w-12 text-right">25</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-left">
+            <div class="text-slate-500 text-xs font-mono uppercase">Audit Fine Exposure</div>
+            <div id="fine-saved" class="text-3xl font-extrabold text-white mt-2">$7,500<span class="text-sm font-normal text-slate-500">/yr</span></div>
+            <div class="text-xs text-slate-400 mt-2">Saved from annual insurance carrier non-compliance penalties.</div>
+          </div>
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 text-left">
+            <div class="text-slate-500 text-xs font-mono uppercase">Chasing Hours Eliminated</div>
+            <div id="hours-saved" class="text-3xl font-extrabold text-emerald-400 mt-2">125 hrs<span class="text-sm font-normal text-slate-500">/yr</span></div>
+            <div class="text-xs text-slate-400 mt-2">No more emails, phone tags, or broker follow-ups.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 border-t border-slate-900 bg-slate-950/40">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-white mb-3">Simple, Transparent Pricing</h2>
+        <p class="text-slate-400 text-sm">One audit fine costs more than an entire year of SubShield.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Starter Plan -->
+        <div class="glass-card p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+          <div>
+            <div class="text-emerald-400 font-semibold text-sm mb-2">STARTER</div>
+            <div class="flex items-baseline gap-1 mb-6">
+              <span class="text-4xl font-extrabold text-white">$199</span>
+              <span class="text-slate-500 text-sm">/month</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-6">Ideal for remodelers and custom builders managing up to 25 trade subs.</p>
+
+            <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Up to 25 active subcontractors</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Unlimited instant ACORD 25 OCR</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Automated 30/14/7-day email & SMS chasing</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Accounting "Hold Payment" alert flag</span>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-2 mt-4">
+            <button onclick="triggerCheckout('starter')" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-2">
+              <i data-lucide="credit-card" class="w-4 h-4"></i>
+              <span>Subscribe with Stripe ($199/mo)</span>
+            </button>
+            <button onclick="openModal()" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 text-xs transition">
+              Or Start with Free 5-COI Audit
+            </button>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="glass-card p-8 rounded-3xl border-2 border-emerald-500/50 relative flex flex-col justify-between shadow-2xl shadow-emerald-500/10">
+          <div class="absolute -top-3.5 right-8 px-3 py-1 rounded-full bg-emerald-500 text-slate-950 font-bold text-xs uppercase tracking-wider">
+            Most Popular
+          </div>
+          <div>
+            <div class="text-emerald-400 font-semibold text-sm mb-2">PRO</div>
+            <div class="flex items-baseline gap-1 mb-6">
+              <span class="text-4xl font-extrabold text-white">$399</span>
+              <span class="text-slate-500 text-sm">/month</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-6">For commercial GCs running multiple jobsites simultaneously.</p>
+
+            <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Up to 75 active subcontractors</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Everything in Starter included</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Conditional & Unconditional Lien Waivers</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Direct Broker Upload Magic Links</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+                <span>Priority support & dedicated onboarding</span>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-2 mt-4">
+            <button onclick="triggerCheckout('pro')" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-400 hover:from-emerald-400 hover:to-teal-300 text-slate-950 font-extrabold text-sm transition shadow-xl shadow-emerald-500/30 flex items-center justify-center gap-2">
+              <i data-lucide="credit-card" class="w-4 h-4"></i>
+              <span>Subscribe with Stripe ($399/mo)</span>
+            </button>
+            <button onclick="openModal()" class="w-full py-2.5 rounded-xl bg-slate-900/60 hover:bg-slate-800 border border-slate-800 text-slate-400 text-xs transition">
+              Or Request Custom Pilot
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crypto / Card Checkout Modal -->
+  <div id="crypto-checkout-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="glass-card max-w-xl w-full p-8 rounded-3xl border border-slate-800 relative">
+      <button onclick="closeCryptoModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center">
+          <i data-lucide="wallet" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-white">Activate SubShield Subscription</h3>
+          <p class="text-xs text-slate-400">Direct Crypto & Corporate Card Settlement</p>
+        </div>
+      </div>
+
+      <div class="my-6 p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-center justify-between font-mono">
+        <div>
+          <div class="text-[11px] text-slate-500 uppercase">Selected Plan</div>
+          <div id="modal-plan-title" class="text-white font-bold text-base mt-0.5">SubShield Pro</div>
+        </div>
+        <div class="text-right">
+          <div class="text-[11px] text-slate-500 uppercase">Subscription Fee</div>
+          <div id="modal-plan-price" class="text-emerald-400 font-extrabold text-lg mt-0.5">$399 USDC / mo</div>
+        </div>
+      </div>
+
+      <!-- Payment Method Switcher Tabs -->
+      <div class="grid grid-cols-2 gap-2 p-1.5 rounded-xl bg-slate-900 border border-slate-800 mb-6 text-xs font-semibold">
+        <button id="tab-crypto" onclick="switchPaymentTab('crypto')" class="py-2.5 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center gap-2 transition">
+          <i data-lucide="coins" class="w-4 h-4"></i>
+          <span>Pay with Crypto (USDT / USDC)</span>
+        </button>
+        <button id="tab-card" onclick="switchPaymentTab('card')" class="py-2.5 rounded-lg text-slate-400 hover:text-white flex items-center justify-center gap-2 transition">
+          <i data-lucide="credit-card" class="w-4 h-4"></i>
+          <span>Credit / Debit Card</span>
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Direct Crypto USDT / USDC -->
+      <div id="content-crypto" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5 uppercase">Select Settlement Stablecoin & Blockchain</label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <button type="button" onclick="selectCryptoNetwork('usdt_trc20')" id="net-usdt_trc20" class="p-2.5 rounded-xl border border-emerald-500 bg-emerald-500/10 text-emerald-400 text-xs font-bold transition text-center shadow-md shadow-emerald-500/10">
+              <div class="flex items-center justify-center gap-1"><span>USDT</span><span class="text-[10px] px-1 py-0.2 rounded bg-emerald-500/20 text-emerald-300">TRC-20</span></div>
+              <div class="text-[10px] font-normal text-slate-400 mt-0.5">Tron Network (Fast)</div>
+            </button>
+            <button type="button" onclick="selectCryptoNetwork('usdt_bep20')" id="net-usdt_bep20" class="p-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition text-center hover:border-slate-700">
+              <div class="flex items-center justify-center gap-1"><span>USDT</span><span class="text-[10px] px-1 py-0.2 rounded bg-amber-500/20 text-amber-300">BEP-20</span></div>
+              <div class="text-[10px] font-normal text-slate-400 mt-0.5">BNB Chain</div>
+            </button>
+            <button type="button" onclick="selectCryptoNetwork('usdt_polygon')" id="net-usdt_polygon" class="p-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition text-center hover:border-slate-700">
+              <div class="flex items-center justify-center gap-1"><span>USDT</span><span class="text-[10px] px-1 py-0.2 rounded bg-purple-500/20 text-purple-300">Polygon</span></div>
+              <div class="text-[10px] font-normal text-slate-400 mt-0.5">&lt;$0.01 Gas Fee</div>
+            </button>
+            <button type="button" onclick="selectCryptoNetwork('usdc_stellar')" id="net-usdc_stellar" class="p-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition text-center hover:border-slate-700">
+              <div class="flex items-center justify-center gap-1"><span>USDC</span><span class="text-[10px] px-1 py-0.2 rounded bg-sky-500/20 text-sky-300">Stellar</span></div>
+              <div class="text-[10px] font-normal text-slate-400 mt-0.5">Zero Gas Fee</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 space-y-3 font-mono text-xs">
+          <div>
+            <div id="deposit-asset-label" class="text-slate-500 text-[11px] mb-1">DEPOSIT ADDRESS (USDT / USDC RECIPIENT)</div>
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">
+              <span id="crypto-dest-addr" class="truncate mr-2 font-mono text-[11px]">GDZX3R4OPO5C44X4X76STELLARPAYOUTSUBSHIELD76X</span>
+              <button onclick="copyAddress()" class="p-1 rounded bg-slate-800 hover:bg-slate-700 text-emerald-400 shrink-0">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+
+          <div id="memo-container">
+            <div class="text-slate-500 text-[11px] mb-1">REQUIRED MEMO / REFERENCE</div>
+            <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-200">
+              <span id="crypto-memo" class="font-bold text-amber-400">SUB-PRO-742</span>
+              <button onclick="copyMemo()" class="p-1 rounded bg-slate-800 hover:bg-slate-700 text-emerald-400 shrink-0">
+                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5 uppercase">Your Transaction Hash (TxHash / Signature)</label>
+          <input type="text" id="tx-hash-input" placeholder="Paste transaction hash or click Verify" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white text-xs font-mono focus:outline-none focus:border-emerald-500">
+        </div>
+
+        <button onclick="confirmCryptoPayment()" id="btn-verify-crypto" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+          <i data-lucide="check-check" class="w-4 h-4"></i>
+          <span>Verify On-Chain Settlement & Unlock Dashboard</span>
+        </button>
+      </div>
+
+      <!-- Tab Content 2: Card Checkout via Stripe -->
+      <div id="content-card" class="space-y-4 hidden">
+        <p class="text-xs text-slate-400">Pay using any Visa, Mastercard, or American Express corporate card. Funds are processed securely via Stripe.</p>
+        <button onclick="executeStripeCardCheckout()" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+          <i data-lucide="credit-card" class="w-4 h-4"></i>
+          <span>Continue to Stripe Card Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lead Capture Modal -->
+  <div id="audit-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="glass-card max-w-lg w-full p-8 rounded-3xl border border-slate-800 relative">
+      <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 class="text-2xl font-bold text-white mb-2">Get Your Free 5-COI Audit</h3>
+      <p class="text-slate-400 text-sm mb-6">Send us 5 certificates of your current subs. We will run an instant compliance scan showing any lapsed dates or missing endorsements within 2 hours.</p>
+
+      <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5 uppercase">Full Name</label>
+          <input type="text" required placeholder="John Miller" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-emerald-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5 uppercase">Work Email</label>
+          <input type="email" required placeholder="john@millerconstruction.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-emerald-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-400 mb-1.5 uppercase">Company Name & Subs Count</label>
+          <input type="text" required placeholder="Miller Builders (~25 subs)" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-emerald-500">
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition shadow-lg shadow-emerald-500/20 mt-2">
+          Request Free Audit
+        </button>
+      </form>
+      <div id="form-success" class="hidden text-emerald-400 text-xs font-medium text-center mt-4">
+        ✓ Request received! Check your inbox shortly for your direct upload link.
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-12 border-t border-slate-900 text-center text-xs text-slate-500">
+    <p>© 2026 SubShield. Dedicated Compliance Intelligence for General Contractors.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function loadScenario(type) {
+      const resBadge = document.getElementById('res-badge');
+      const resTitle = document.getElementById('res-title');
+      const holdBadge = document.getElementById('hold-badge');
+      const fieldGl = document.getElementById('field-gl');
+      const fieldExp = document.getElementById('field-exp');
+      const fieldAi = document.getElementById('field-ai');
+      const fieldWos = document.getElementById('field-wos');
+      const actionBox = document.getElementById('action-box');
+      const btnPass = document.getElementById('btn-pass');
+      const btnFail = document.getElementById('btn-fail');
+
+      if (type === 'pass') {
+        resBadge.textContent = 'COMPLIANT';
+        resBadge.className = 'px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+        resTitle.textContent = 'Summit Electrical LLC';
+        holdBadge.classList.add('hidden');
+
+        fieldGl.textContent = '$1,000,000 / $2,000,000';
+        fieldExp.textContent = 'Nov 18, 2027 (Active)';
+        fieldExp.className = 'text-emerald-400 font-semibold text-sm mt-1';
+        fieldAi.textContent = 'Verified (Included)';
+        fieldAi.className = 'text-emerald-400 font-semibold text-sm mt-1';
+        fieldWos.textContent = 'Verified (Included)';
+        fieldWos.className = 'text-emerald-400 font-semibold text-sm mt-1';
+
+        actionBox.className = 'p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-300 flex items-start gap-3';
+        actionBox.innerHTML = '<i data-lucide="check" class="w-4 h-4 text-emerald-400 mt-0.5 shrink-0"></i><span>All coverage requirements satisfied. Invoice cleared for project accounting release. Next expiration alert scheduled for 30 days prior.</span>';
+
+        btnPass.className = 'w-full text-left p-3.5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 transition flex items-center justify-between';
+        btnFail.className = 'w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800 transition flex items-center justify-between';
+      } else {
+        resBadge.textContent = 'NON-COMPLIANT';
+        resBadge.className = 'px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-rose-500/20 text-rose-400 border border-rose-500/30';
+        resTitle.textContent = 'Apex Roofing & Siding';
+        holdBadge.classList.remove('hidden');
+
+        fieldGl.textContent = '$500,000 / $1,000,000 (Deficient)';
+        fieldExp.textContent = 'Expires in 4 Days (Urgent)';
+        fieldExp.className = 'text-rose-400 font-semibold text-sm mt-1';
+        fieldAi.textContent = 'Verified (Included)';
+        fieldAi.className = 'text-emerald-400 font-semibold text-sm mt-1';
+        fieldWos.textContent = 'MISSING from Endorsement';
+        fieldWos.className = 'text-rose-400 font-semibold text-sm mt-1';
+
+        actionBox.className = 'p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/20 text-xs text-rose-300 flex items-start gap-3';
+        actionBox.innerHTML = '<i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400 mt-0.5 shrink-0"></i><span>Payment blocked in QuickBooks. Automated urgent SMS & email sent to Apex Roofing and their broker (Hartford Agency) requesting updated endorsement.</span>';
+
+        btnFail.className = 'w-full text-left p-3.5 rounded-xl border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 transition flex items-center justify-between';
+        btnPass.className = 'w-full text-left p-3.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800 transition flex items-center justify-between';
+      }
+      lucide.createIcons();
+    }
+
+    function updateROI(val) {
+      document.getElementById('sub-count').textContent = val;
+      const fines = val * 300;
+      const hours = Math.round(val * 5);
+      document.getElementById('fine-saved').innerHTML = `$${fines.toLocaleString()}<span class="text-sm font-normal text-slate-500">/yr</span>`;
+      document.getElementById('hours-saved').innerHTML = `${hours} hrs<span class="text-sm font-normal text-slate-500">/yr</span>`;
+    }
+
+    function openModal() {
+      const modal = document.getElementById('audit-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('audit-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').classList.remove('hidden');
+      setTimeout(() => {
+        closeModal();
+      }, 2500);
+    }
+
+    let selectedPlan = 'pro';
+    let currentNetwork = 'usdt_trc20';
+    let activeInvoice = null;
+
+    function triggerCheckout(plan) {
+      selectedPlan = plan;
+      const modal = document.getElementById('crypto-checkout-modal');
+      document.getElementById('modal-plan-title').textContent = plan === 'pro' ? 'SubShield Pro' : 'SubShield Starter';
+      const defaultAmount = plan === 'pro' ? 399 : 199;
+      document.getElementById('modal-plan-price').textContent = `$${defaultAmount} USDT / mo`;
+
+      selectCryptoNetwork('usdt_trc20');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      lucide.createIcons();
+    }
+
+    function closeCryptoModal() {
+      const modal = document.getElementById('crypto-checkout-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function switchPaymentTab(tab) {
+      const btnCrypto = document.getElementById('tab-crypto');
+      const btnCard = document.getElementById('tab-card');
+      const contentCrypto = document.getElementById('content-crypto');
+      const contentCard = document.getElementById('content-card');
+
+      if (tab === 'crypto') {
+        btnCrypto.className = 'py-2.5 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center gap-2 transition';
+        btnCard.className = 'py-2.5 rounded-lg text-slate-400 hover:text-white flex items-center justify-center gap-2 transition';
+        contentCrypto.classList.remove('hidden');
+        contentCard.classList.add('hidden');
+      } else {
+        btnCard.className = 'py-2.5 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center gap-2 transition';
+        btnCrypto.className = 'py-2.5 rounded-lg text-slate-400 hover:text-white flex items-center justify-center gap-2 transition';
+        contentCard.classList.remove('hidden');
+        contentCrypto.classList.add('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    async function selectCryptoNetwork(net) {
+      currentNetwork = net;
+      const networks = ['usdt_trc20', 'usdt_bep20', 'usdt_polygon', 'usdc_stellar'];
+      networks.forEach(n => {
+        const btn = document.getElementById(`net-${n}`);
+        if (!btn) return;
+        if (n === net) {
+          btn.className = 'p-2.5 rounded-xl border border-emerald-500 bg-emerald-500/10 text-emerald-400 text-xs font-bold transition text-center shadow-md shadow-emerald-500/10';
+        } else {
+          btn.className = 'p-2.5 rounded-xl border border-slate-800 bg-slate-900 text-slate-300 text-xs font-bold transition text-center hover:border-slate-700';
+        }
+      });
+
+      try {
+        const res = await fetch('/api/create-crypto-invoice', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            plan: selectedPlan,
+            network: net,
+            company_name: 'Miller Construction LLC',
+            email: 'john@millerconstruction.com'
+          })
+        });
+        activeInvoice = await res.json();
+        document.getElementById('modal-plan-price').textContent = `$${activeInvoice.amount} ${activeInvoice.asset} / mo`;
+        document.getElementById('crypto-dest-addr').textContent = activeInvoice.recipient_address;
+        const assetLabel = document.getElementById('deposit-asset-label');
+        if (assetLabel) {
+          assetLabel.textContent = `DEPOSIT ADDRESS (${activeInvoice.asset} - ${activeInvoice.network})`;
+        }
+        
+        const memoContainer = document.getElementById('memo-container');
+        if (memoContainer) {
+          if (activeInvoice.memo_required) {
+            memoContainer.classList.remove('hidden');
+            document.getElementById('crypto-memo').textContent = activeInvoice.memo_reference;
+          } else {
+            memoContainer.classList.add('hidden');
+          }
+        }
+        lucide.createIcons();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    function copyAddress() {
+      const addr = document.getElementById('crypto-dest-addr').textContent;
+      navigator.clipboard.writeText(addr);
+      alert('✓ Recipient Crypto Address copied to clipboard!');
+    }
+
+    function copyMemo() {
+      const memo = document.getElementById('crypto-memo').textContent;
+      navigator.clipboard.writeText(memo);
+      alert('✓ Memo reference copied to clipboard!');
+    }
+
+    async function confirmCryptoPayment() {
+      const btn = document.getElementById('btn-verify-crypto');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i><span>Scanning On-Chain Blocks...</span>';
+      lucide.createIcons();
+
+      const txHash = document.getElementById('tx-hash-input').value || '0xsim_verified_onchain_settlement';
+
+      try {
+        const res = await fetch('/api/verify-crypto-payment', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            invoice_id: activeInvoice ? activeInvoice.invoice_id : 'inv_sim',
+            plan: selectedPlan,
+            network: currentNetwork,
+            company_name: 'Miller Construction LLC',
+            tx_hash: txHash,
+            memo_reference: activeInvoice ? activeInvoice.memo_reference : ''
+          })
+        });
+        const data = await res.json();
+        if (data.verified) {
+          alert('🎉 ' + data.message);
+          window.location.href = data.redirect_url;
+        } else {
+          alert('❌ Verification Failed: ' + (data.error || data.message));
+          btn.innerHTML = originalText;
+          lucide.createIcons();
+        }
+      } catch (err) {
+        console.error(err);
+        btn.innerHTML = originalText;
+        lucide.createIcons();
+      }
+    }
+
+    async function executeStripeCardCheckout() {
+      try {
+        const res = await fetch('/api/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            plan: selectedPlan,
+            company_name: 'Miller Construction LLC',
+            email: 'john@millerconstruction.com'
+          })
+        });
+        const data = await res.json();
+        if (data.checkout_url) {
+          window.location.href = data.checkout_url;
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>

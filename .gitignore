@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.log
+tunnel.log
+cloudflare_tunnel.log
+db.json

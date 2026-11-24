@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SubShield | General Contractor Compliance Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-emerald-500 selection:text-slate-950 antialiased">
+
+  <!-- Top App Bar -->
+  <header class="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="/" class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-slate-950">
+            <i data-lucide="shield-check" class="w-5 h-5 stroke-[2.5]"></i>
+          </div>
+          <span class="text-xl font-bold tracking-tight text-white">Sub<span class="text-emerald-400">Shield</span></span>
+        </a>
+        <span class="text-xs px-2.5 py-0.5 rounded-full bg-slate-800 text-slate-400 font-mono">GC Portal</span>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <!-- Stripe Subscription Badge -->
+        <div class="flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-xs">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span class="text-slate-300 font-medium" id="company-display">Miller Construction LLC</span>
+          <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 font-mono font-semibold" id="plan-badge">PRO ($399/mo)</span>
+        </div>
+
+        <button onclick="openAddModal()" class="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs transition flex items-center gap-1.5 shadow-md shadow-emerald-500/20">
+          <i data-lucide="plus" class="w-4 h-4"></i>
+          <span>Add Subcontractor</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <!-- Breadcrumb & Title -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+      <div>
+        <h1 class="text-2xl font-bold text-white tracking-tight">Active Subcontractors & Insurance Compliance</h1>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">Real-time ACORD 25 monitoring, automated broker chasing, and accounting hold-payment flags.</p>
+      </div>
+      <button onclick="openUploadModal()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-medium text-xs transition flex items-center gap-2 self-start sm:self-auto">
+        <i data-lucide="file-up" class="w-4 h-4 text-emerald-400"></i>
+        <span>Scan Any ACORD 25 PDF</span>
+      </button>
+    </div>
+
+    <!-- On-Chain Verified Settlement Alert Banner -->
+    <div id="onchain-banner" class="hidden mb-8 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-between font-mono text-xs text-emerald-300">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+          <i data-lucide="check-check" class="w-4 h-4"></i>
+        </div>
+        <div>
+          <div class="font-bold text-emerald-300">ON-CHAIN SETTLEMENT VERIFIED & SUBSCRIPTION ACTIVE</div>
+          <div class="text-[11px] text-slate-400 mt-0.5 truncate max-w-xl" id="onchain-tx-desc">100% USDT/USDC received directly to merchant payout wallet.</div>
+        </div>
+      </div>
+      <span class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 text-[10px] font-bold uppercase tracking-wider shrink-0">Live Subscription</span>
+    </div>
+
+    <!-- Metric Overview Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 font-mono">
+      <div class="glass-card p-5 rounded-2xl">
+        <div class="text-slate-400 text-xs flex items-center justify-between">
+          <span>TOTAL ACTIVE SUBS</span>
+          <i data-lucide="users" class="w-4 h-4 text-slate-500"></i>
+        </div>
+        <div class="text-3xl font-bold text-white mt-2" id="metric-total">3</div>
+        <div class="text-[11px] text-slate-500 mt-1">Under active jobsite monitoring</div>
+      </div>
+
+      <div class="glass-card p-5 rounded-2xl border-emerald-500/20">
+        <div class="text-emerald-400 text-xs flex items-center justify-between">
+          <span>100% COMPLIANT</span>
+          <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-emerald-400 mt-2" id="metric-compliant">1</div>
+        <div class="text-[11px] text-slate-500 mt-1">Cleared for payroll & payments</div>
+      </div>
+
+      <div class="glass-card p-5 rounded-2xl border-amber-500/20">
+        <div class="text-amber-400 text-xs flex items-center justify-between">
+          <span>EXPIRING SOON (&lt;30d)</span>
+          <i data-lucide="clock" class="w-4 h-4 text-amber-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-amber-400 mt-2" id="metric-expiring">1</div>
+        <div class="text-[11px] text-slate-500 mt-1">Automated broker chasing active</div>
+      </div>
+
+      <div class="glass-card p-5 rounded-2xl border-rose-500/30 bg-rose-950/10">
+        <div class="text-rose-400 text-xs flex items-center justify-between font-bold">
+          <span>HOLD PAYMENT (DEFICIENT)</span>
+          <i data-lucide="alert-octagon" class="w-4 h-4 text-rose-400"></i>
+        </div>
+        <div class="text-3xl font-bold text-rose-400 mt-2" id="metric-deficient">1</div>
+        <div class="text-[11px] text-rose-400/80 mt-1">Payment blocked to protect GC audit</div>
+      </div>
+    </div>
+
+    <!-- Subcontractor Table Card -->
+    <div class="glass-card rounded-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between">
+        <h2 class="font-semibold text-white text-sm flex items-center gap-2">
+          <i data-lucide="list" class="w-4 h-4 text-emerald-400"></i>
+          Subcontractor Compliance Ledger
+        </h2>
+        <span class="text-xs text-slate-500 font-mono">Auto-refreshed live</span>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+          <thead class="bg-slate-900/80 border-b border-slate-800 text-slate-400 font-mono uppercase text-[11px]">
+            <tr>
+              <th class="px-6 py-3.5">Subcontractor & Trade</th>
+              <th class="px-6 py-3.5">Carrier & Policy Limits</th>
+              <th class="px-6 py-3.5">Expiration & Days Left</th>
+              <th class="px-6 py-3.5">Compliance Status</th>
+              <th class="px-6 py-3.5 text-right">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="subs-tbody" class="divide-y divide-slate-800/60">
+            <!-- Rendered dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Add Subcontractor Modal -->
+  <div id="add-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="glass-card max-w-lg w-full p-6 rounded-2xl border border-slate-800 relative">
+      <button onclick="closeAddModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 class="text-lg font-bold text-white mb-1">Add New Subcontractor</h3>
+      <p class="text-slate-400 text-xs mb-5">SubShield will automatically send a secure magic upload link to their insurance broker.</p>
+
+      <form onsubmit="handleAddSub(event)" class="space-y-3.5 text-xs">
+        <div>
+          <label class="block text-slate-400 font-semibold mb-1 uppercase">Subcontractor Business Name</label>
+          <input type="text" id="add-name" required placeholder="e.g. Precision HVAC Solutions" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-slate-400 font-semibold mb-1 uppercase">Trade</label>
+            <input type="text" id="add-trade" required placeholder="HVAC / Mechanical" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+          </div>
+          <div>
+            <label class="block text-slate-400 font-semibold mb-1 uppercase">Policy Expiration Date</label>
+            <input type="date" id="add-date" required value="2027-02-15" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+          </div>
+        </div>
+        <div>
+          <label class="block text-slate-400 font-semibold mb-1 uppercase">Subcontractor Contact Email</label>
+          <input type="email" id="add-email" required placeholder="contact@precisionhvac.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+        </div>
+        <div>
+          <label class="block text-slate-400 font-semibold mb-1 uppercase">Subcontractor Insurance Broker Email</label>
+          <input type="email" id="add-broker" required placeholder="certs@alliedbrokerage.com" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-emerald-500">
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition shadow-md shadow-emerald-500/20 mt-4">
+          Save Subcontractor & Dispatch Broker Chaser
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Upload & Verify ACORD 25 Modal -->
+  <div id="upload-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="glass-card max-w-xl w-full p-6 rounded-2xl border border-slate-800 relative">
+      <button onclick="closeUploadModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <h3 class="text-lg font-bold text-white mb-1">Instant ACORD 25 AI Verification</h3>
+      <p class="text-slate-400 text-xs mb-5">Drop any certificate PDF to verify General Liability, Workers' Comp, and critical endorsements.</p>
+
+      <div class="border-2 border-dashed border-slate-800 hover:border-emerald-500/50 transition rounded-xl p-8 text-center cursor-pointer mb-5" onclick="simulateScan()">
+        <i data-lucide="file-text" class="w-10 h-10 mx-auto text-emerald-400 mb-2"></i>
+        <div class="text-sm font-semibold text-white">Click to Scan Sample Certificate PDF</div>
+        <div class="text-xs text-slate-500 mt-1">Runs instant compliance rule matching</div>
+      </div>
+
+      <div id="scan-result" class="hidden p-4 rounded-xl bg-slate-900 border border-slate-800 text-xs">
+        <div class="flex items-center justify-between mb-2 pb-2 border-b border-slate-800">
+          <span class="font-bold text-emerald-400 uppercase font-mono">PARSED CERTIFICATE REPORT</span>
+          <span class="text-slate-400 font-mono">Score: 100/100</span>
+        </div>
+        <div class="space-y-1.5 text-slate-300 font-mono">
+          <div>✓ General Liability: <strong class="text-white">$1,000,000 / $2,000,000</strong></div>
+          <div>✓ Additional Insured Endorsement: <strong class="text-emerald-400">Verified</strong></div>
+          <div>✓ Waiver of Subrogation: <strong class="text-emerald-400">Verified</strong></div>
+          <div>✓ Expiration Date: <strong class="text-white">2027-11-18 (Active)</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+
+    // Check URL parameters for plan details
+    const params = new URLSearchParams(window.location.search);
+    const plan = params.get('plan') || 'pro';
+    const company = params.get('company') || 'Miller Construction LLC';
+    const tx = params.get('tx');
+    const status = params.get('status');
+
+    document.getElementById('company-display').textContent = decodeURIComponent(company);
+    document.getElementById('plan-badge').textContent = plan.toUpperCase() === 'PRO' ? 'PRO ($399/mo)' : 'STARTER ($199/mo)';
+
+    if (tx || status === 'active') {
+      const banner = document.getElementById('onchain-banner');
+      if (banner) {
+        banner.classList.remove('hidden');
+        if (tx) {
+          document.getElementById('onchain-tx-desc').textContent = `On-Chain TxHash: ${tx} | Block confirmed & settled directly to payout wallet.`;
+        }
+      }
+    }
+
+    async function fetchSubcontractors() {
+      try {
+        const res = await fetch('/api/subcontractors');
+        const data = await res.json();
+        renderSubcontractors(data.subcontractors || []);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+
+    function renderSubcontractors(subs) {
+      const tbody = document.getElementById('subs-tbody');
+      tbody.innerHTML = '';
+
+      let total = subs.length;
+      let compliant = 0;
+      let expiring = 0;
+      let deficient = 0;
+
+      subs.forEach(s => {
+        if (s.status === 'compliant') compliant++;
+        else if (s.status === 'expiring_soon') expiring++;
+        else if (s.status === 'deficient') deficient++;
+
+        const tr = document.createElement('tr');
+        tr.className = 'hover:bg-slate-900/40 transition';
+
+        let statusHtml = '';
+        if (s.status === 'compliant') {
+          statusHtml = `<span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1 w-max"><i data-lucide="check" class="w-3 h-3"></i>Compliant</span>`;
+        } else if (s.status === 'expiring_soon') {
+          statusHtml = `<span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center gap-1 w-max"><i data-lucide="clock" class="w-3 h-3"></i>Expiring (${s.days_until_exp}d)</span>`;
+        } else {
+          statusHtml = `<span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold bg-rose-500 text-slate-950 flex items-center gap-1 w-max"><i data-lucide="alert-octagon" class="w-3 h-3"></i>HOLD PAYMENT</span>`;
+        }
+
+        tr.innerHTML = `
+          <td class="px-6 py-4">
+            <div class="font-semibold text-white">${s.name}</div>
+            <div class="text-slate-400 text-[11px]">${s.trade}</div>
+          </td>
+          <td class="px-6 py-4">
+            <div class="text-slate-300 font-mono">${s.gl_limit}</div>
+            <div class="text-slate-500 text-[11px]">${s.policy_carrier}</div>
+          </td>
+          <td class="px-6 py-4 font-mono">
+            <div class="${s.days_until_exp <= 7 ? 'text-rose-400 font-bold' : 'text-slate-300'}">${s.expiration_date}</div>
+            <div class="text-slate-500 text-[11px]">${s.days_until_exp} days remaining</div>
+          </td>
+          <td class="px-6 py-4">
+            ${statusHtml}
+          </td>
+          <td class="px-6 py-4 text-right">
+            <button onclick="chaseBroker('${s.id}')" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-[11px] font-medium transition inline-flex items-center gap-1">
+              <i data-lucide="send" class="w-3 h-3 text-emerald-400"></i>
+              <span>Chase Broker</span>
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('metric-total').textContent = total;
+      document.getElementById('metric-compliant').textContent = compliant;
+      document.getElementById('metric-expiring').textContent = expiring;
+      document.getElementById('metric-deficient').textContent = deficient;
+
+      lucide.createIcons();
+    }
+
+    async function chaseBroker(subId) {
+      try {
+        const res = await fetch('/api/chase-broker', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({sub_id: subId})
+        });
+        const data = await res.json();
+        alert('✓ ' + data.message);
+        fetchSubcontractors();
+      } catch (e) {
+        alert('Error triggering chaser');
+      }
+    }
+
+    function openAddModal() {
+      document.getElementById('add-modal').classList.remove('hidden');
+      document.getElementById('add-modal').classList.add('flex');
+    }
+
+    function closeAddModal() {
+      document.getElementById('add-modal').classList.add('hidden');
+      document.getElementById('add-modal').classList.remove('flex');
+    }
+
+    async function handleAddSub(e) {
+      e.preventDefault();
+      const newSub = {
+        name: document.getElementById('add-name').value,
+        trade: document.getElementById('add-trade').value,
+        expiration_date: document.getElementById('add-date').value,
+        contact_email: document.getElementById('add-email').value,
+        broker_email: document.getElementById('add-broker').value
+      };
+
+      try {
+        await fetch('/api/subcontractors', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(newSub)
+        });
+        closeAddModal();
+        fetchSubcontractors();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    function openUploadModal() {
+      document.getElementById('upload-modal').classList.remove('hidden');
+      document.getElementById('upload-modal').classList.add('flex');
+    }
+
+    function closeUploadModal() {
+      document.getElementById('upload-modal').classList.add('hidden');
+      document.getElementById('upload-modal').classList.remove('flex');
+    }
+
+    function simulateScan() {
+      const res = document.getElementById('scan-result');
+      res.classList.remove('hidden');
+    }
+
+    fetchSubcontractors();
+  </script>
+</body>
+</html>
