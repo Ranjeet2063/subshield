@@ -196,7 +196,8 @@ def run_outreach_pipeline(max_batch: int = 5):
 
                 # Human pacing gap
                 if idx + 1 < len(batch_to_send):
-                    pace_delay = 5 # Rapid test pacing
+                    import random
+                    pace_delay = round(random.uniform(8.0, 14.0), 1)
                     log(f"Pacing {pace_delay}s before next contractor dispatch...")
                     time.sleep(pace_delay)
 

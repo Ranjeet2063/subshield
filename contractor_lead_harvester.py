@@ -297,6 +297,276 @@ PRIMARY_CONTRACTORS = [
         "phone": "+1 (404) 588-3300",
         "estimating_email": "estimating@winter-construction.com",
         "compliance_email": "info@winter-construction.com"
+    },
+
+    # California (Los Angeles, San Francisco, San Diego)
+    {
+        "company": "Hathaway Dinwiddie Construction",
+        "domain": "hdcco.com",
+        "contact_name": "Greg O'Brien",
+        "role": "Executive VP & Preconstruction Lead",
+        "city": "San Francisco",
+        "state": "CA",
+        "estimated_subs": 65,
+        "specialty": "Commercial High-Rise, Tech Campuses, Life Science",
+        "phone": "+1 (415) 986-2718",
+        "estimating_email": "estimating@hdcco.com",
+        "compliance_email": "info@hdcco.com"
+    },
+    {
+        "company": "Webcor Builders",
+        "domain": "webcor.com",
+        "contact_name": "Matt Rossiter",
+        "role": "VP of Operations",
+        "city": "San Francisco",
+        "state": "CA",
+        "estimated_subs": 70,
+        "specialty": "Commercial Concrete, Multi-Family, Healthcare",
+        "phone": "+1 (415) 978-6800",
+        "estimating_email": "estimating@webcor.com",
+        "compliance_email": "subcontractors@webcor.com"
+    },
+    {
+        "company": "Swinerton Builders",
+        "domain": "swinerton.com",
+        "contact_name": "Ray Haj",
+        "role": "Chief Operating Officer",
+        "city": "Concord",
+        "state": "CA",
+        "estimated_subs": 80,
+        "specialty": "Commercial Corporate, Mass Timber, Renewable Energy",
+        "phone": "+1 (925) 667-7300",
+        "estimating_email": "estimating@swinerton.com",
+        "compliance_email": "certs@swinerton.com"
+    },
+    {
+        "company": "McCarthy Building Companies Inc",
+        "domain": "mccarthy.com",
+        "contact_name": "Justin Dent",
+        "role": "Director of Risk Management",
+        "city": "Newport Beach",
+        "state": "CA",
+        "estimated_subs": 90,
+        "specialty": "Healthcare, Commercial Aviation, Solar",
+        "phone": "+1 (949) 851-8383",
+        "estimating_email": "bids@mccarthy.com",
+        "compliance_email": "info@mccarthy.com"
+    },
+    {
+        "company": "Rudolph and Sletten Inc",
+        "domain": "rsconstruction.com",
+        "contact_name": "Jonathan Foad",
+        "role": "VP of Operations",
+        "city": "San Carlos",
+        "state": "CA",
+        "estimated_subs": 55,
+        "specialty": "Biotech, Healthcare, Higher Education",
+        "phone": "+1 (650) 216-3600",
+        "estimating_email": "estimating@rsconstruction.com",
+        "compliance_email": "info@rsconstruction.com"
+    },
+    {
+        "company": "C.W. Driver Companies",
+        "domain": "cwdriver.com",
+        "contact_name": "Brent Hughes",
+        "role": "Senior VP of Operations",
+        "city": "Pasadena",
+        "state": "CA",
+        "estimated_subs": 50,
+        "specialty": "Commercial Entertainment, Education, Civic",
+        "phone": "+1 (626) 351-8800",
+        "estimating_email": "estimating@cwdriver.com",
+        "compliance_email": "info@cwdriver.com"
+    },
+
+    # Illinois & Midwest (Chicago, Minneapolis)
+    {
+        "company": "Pepper Construction Group",
+        "domain": "pepperconstruction.com",
+        "contact_name": "Stan Pepper",
+        "role": "Chairman & CEO",
+        "city": "Chicago",
+        "state": "IL",
+        "estimated_subs": 60,
+        "specialty": "Commercial Office, Data Centers, Healthcare",
+        "phone": "+1 (312) 266-4300",
+        "estimating_email": "estimating@pepperconstruction.com",
+        "compliance_email": "certs@pepperconstruction.com"
+    },
+    {
+        "company": "Power Construction Company LLC",
+        "domain": "powerconstruction.net",
+        "contact_name": "Terry Graber",
+        "role": "President & Chief Executive",
+        "city": "Chicago",
+        "state": "IL",
+        "estimated_subs": 55,
+        "specialty": "Healthcare, Hospitality, Luxury Multi-Family",
+        "phone": "+1 (847) 928-6700",
+        "estimating_email": "estimating@powerconstruction.net",
+        "compliance_email": "info@powerconstruction.net"
+    },
+    {
+        "company": "Bulley & Andrews LLC",
+        "domain": "bulley.com",
+        "contact_name": "Allan Bulley",
+        "role": "Chairman & Operations Lead",
+        "city": "Chicago",
+        "state": "IL",
+        "estimated_subs": 45,
+        "specialty": "Commercial Restoration, Institutional, Industrial",
+        "phone": "+1 (773) 235-2433",
+        "estimating_email": "estimating@bulley.com",
+        "compliance_email": "info@bulley.com"
+    },
+    {
+        "company": "Mortenson Construction",
+        "domain": "mortenson.com",
+        "contact_name": "Dan Johnson",
+        "role": "President & CEO",
+        "city": "Minneapolis",
+        "state": "MN",
+        "estimated_subs": 85,
+        "specialty": "Sports Facilities, Commercial Wind/Solar, Life Science",
+        "phone": "+1 (763) 522-2100",
+        "estimating_email": "bids@mortenson.com",
+        "compliance_email": "info@mortenson.com"
+    },
+    {
+        "company": "Ryan Companies US Inc",
+        "domain": "ryancompanies.com",
+        "contact_name": "Brian Murray",
+        "role": "Chief Executive Officer",
+        "city": "Minneapolis",
+        "state": "MN",
+        "estimated_subs": 70,
+        "specialty": "Commercial Logistics, Senior Living, Office",
+        "phone": "+1 (612) 492-4000",
+        "estimating_email": "estimating@ryancompanies.com",
+        "compliance_email": "info@ryancompanies.com"
+    },
+
+    # New York & Massachusetts (NYC, Boston)
+    {
+        "company": "Hunter Roberts Construction Group",
+        "domain": "hrcg.com",
+        "contact_name": "James McKenna",
+        "role": "President & CEO",
+        "city": "New York",
+        "state": "NY",
+        "estimated_subs": 60,
+        "specialty": "Commercial Interiors, High-Rise Residential, Cultural",
+        "phone": "+1 (212) 321-6800",
+        "estimating_email": "estimating@hrcg.com",
+        "compliance_email": "info@hrcg.com"
+    },
+    {
+        "company": "Consigli Construction Co Inc",
+        "domain": "consigli.com",
+        "contact_name": "Matthew Consigli",
+        "role": "President",
+        "city": "Milford",
+        "state": "MA",
+        "estimated_subs": 65,
+        "specialty": "Academic, Commercial Historic Preservation, Life Sciences",
+        "phone": "+1 (508) 473-2580",
+        "estimating_email": "estimating@consigli.com",
+        "compliance_email": "certs@consigli.com"
+    },
+    {
+        "company": "Shawmut Design and Construction",
+        "domain": "shawmut.com",
+        "contact_name": "Les Hiscoe",
+        "role": "Chief Executive Officer",
+        "city": "Boston",
+        "state": "MA",
+        "estimated_subs": 60,
+        "specialty": "Luxury Retail, Commercial Hospitality, Higher Ed",
+        "phone": "+1 (617) 622-7000",
+        "estimating_email": "estimating@shawmut.com",
+        "compliance_email": "info@shawmut.com"
+    },
+    {
+        "company": "Gilbane Building Company",
+        "domain": "gilbaneco.com",
+        "contact_name": "Thomas Gilbane",
+        "role": "Chairman & CEO",
+        "city": "Providence",
+        "state": "RI",
+        "estimated_subs": 80,
+        "specialty": "Commercial Real Estate, Federal, Healthcare",
+        "phone": "+1 (401) 456-5800",
+        "estimating_email": "bids@gilbaneco.com",
+        "compliance_email": "info@gilbaneco.com"
+    },
+
+    # Ohio, Alabama & Southeast
+    {
+        "company": "Messer Construction Co",
+        "domain": "messer.com",
+        "contact_name": "Tim Steigerwald",
+        "role": "President & CEO",
+        "city": "Cincinnati",
+        "state": "OH",
+        "estimated_subs": 55,
+        "specialty": "Healthcare, Higher Ed, Aviation, Commercial",
+        "phone": "+1 (513) 242-1541",
+        "estimating_email": "estimating@messer.com",
+        "compliance_email": "info@messer.com"
+    },
+    {
+        "company": "Brasfield & Gorrie LLC",
+        "domain": "brasfieldgorrie.com",
+        "contact_name": "Jim Gorrie",
+        "role": "Chairman & CEO",
+        "city": "Birmingham",
+        "state": "AL",
+        "estimated_subs": 85,
+        "specialty": "Commercial Healthcare, Industrial, Mixed-Use",
+        "phone": "+1 (205) 328-4000",
+        "estimating_email": "bids@brasfieldgorrie.com",
+        "compliance_email": "subcontractors@brasfieldgorrie.com"
+    },
+    {
+        "company": "Hoar Construction LLC",
+        "domain": "hoar.com",
+        "contact_name": "Turner Burton",
+        "role": "President",
+        "city": "Birmingham",
+        "state": "AL",
+        "estimated_subs": 50,
+        "specialty": "Commercial Retail, Multi-Family, Civic",
+        "phone": "+1 (205) 803-2100",
+        "estimating_email": "estimating@hoar.com",
+        "compliance_email": "info@hoar.com"
+    },
+
+    # Washington & Pacific Northwest (Seattle)
+    {
+        "company": "GLY Construction Inc",
+        "domain": "gly.com",
+        "contact_name": "Mark Kane",
+        "role": "President & CEO",
+        "city": "Bellevue",
+        "state": "WA",
+        "estimated_subs": 50,
+        "specialty": "Tech Commercial, Life Science, Multi-Family",
+        "phone": "+1 (425) 451-8877",
+        "estimating_email": "estimating@gly.com",
+        "compliance_email": "info@gly.com"
+    },
+    {
+        "company": "Lease Crutcher Lewis",
+        "domain": "lewisbuilds.com",
+        "contact_name": "Bart Ricketts",
+        "role": "Chief Executive Officer",
+        "city": "Seattle",
+        "state": "WA",
+        "estimated_subs": 55,
+        "specialty": "Commercial Office, Education, Data Centers",
+        "phone": "+1 (206) 622-0500",
+        "estimating_email": "estimating@lewisbuilds.com",
+        "compliance_email": "info@lewisbuilds.com"
     }
 ]
 

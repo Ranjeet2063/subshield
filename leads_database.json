@@ -14,7 +14,7 @@
     "mx_verified": true,
     "mx_host": "0 spawglass-com.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:28.714903+00:00"
+    "last_verified_utc": "2026-11-24T15:54:14.585259+00:00"
   },
   {
     "company": "Rogers-O'Brien Construction",
@@ -31,7 +31,7 @@
     "mx_verified": true,
     "mx_host": "10 rogersobrien-com01e.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:28.837318+00:00"
+    "last_verified_utc": "2026-11-24T15:54:14.695991+00:00"
   },
   {
     "company": "Joeris General Contractors Ltd",
@@ -48,7 +48,7 @@
     "mx_verified": true,
     "mx_host": "0 us-smtp-inbound-2.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:28.999243+00:00"
+    "last_verified_utc": "2026-11-24T15:54:14.900052+00:00"
   },
   {
     "company": "Austin Commercial LP",
@@ -65,7 +65,7 @@
     "mx_verified": true,
     "mx_host": "10 usb-smtp-inbound-1.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.046685+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.046547+00:00"
   },
   {
     "company": "The Beck Group",
@@ -82,7 +82,7 @@
     "mx_verified": true,
     "mx_host": "10 d53443a.ess.barracudanetworks.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.153978+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.116947+00:00"
   },
   {
     "company": "Anslow Bryant Construction Ltd",
@@ -99,7 +99,7 @@
     "mx_verified": true,
     "mx_host": "10 us-smtp-inbound-1.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.257207+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.245358+00:00"
   },
   {
     "company": "Teal Construction Company",
@@ -116,7 +116,7 @@
     "mx_verified": true,
     "mx_host": "0 tealcon-com.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.400392+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.504719+00:00"
   },
   {
     "company": "Structura Inc",
@@ -133,7 +133,7 @@
     "mx_verified": true,
     "mx_host": "0 d308291a.ess.barracudanetworks.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.515282+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.611539+00:00"
   },
   {
     "company": "Moss & Associates LLC",
@@ -150,7 +150,7 @@
     "mx_verified": true,
     "mx_host": "0 mxa-002fa801.gslb.pphosted.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.619104+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.713486+00:00"
   },
   {
     "company": "Plaza Construction Group",
@@ -167,7 +167,7 @@
     "mx_verified": true,
     "mx_host": "0 plazaconstruction-com.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.778333+00:00"
+    "last_verified_utc": "2026-11-24T15:54:15.863403+00:00"
   },
   {
     "company": "Williams Company Southeast",
@@ -184,7 +184,7 @@
     "mx_verified": true,
     "mx_host": "10 dataprise-mx.email-protect.gosecure.net.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:29.931675+00:00"
+    "last_verified_utc": "2026-11-24T15:54:16.012969+00:00"
   },
   {
     "company": "Stellar Group Inc",
@@ -199,9 +199,9 @@
     "estimated_subs": 75,
     "specialty": "Industrial Food Processing, Cold Storage, Commercial",
     "mx_verified": true,
-    "mx_host": "10 us-smtp-inbound-1.mimecast.com.",
+    "mx_host": "10 us-smtp-inbound-2.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:30.507857+00:00"
+    "last_verified_utc": "2026-11-24T15:54:16.567109+00:00"
   },
   {
     "company": "Choate Construction Company",
@@ -218,7 +218,7 @@
     "mx_verified": true,
     "mx_host": "2 us-smtp-inbound-1.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:30.665127+00:00"
+    "last_verified_utc": "2026-11-24T15:54:16.730461+00:00"
   },
   {
     "company": "Shelco LLC",
@@ -235,7 +235,7 @@
     "mx_verified": true,
     "mx_host": "10 us-smtp-inbound-2.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:30.807912+00:00"
+    "last_verified_utc": "2026-11-24T15:54:16.868104+00:00"
   },
   {
     "company": "Edifice LLC",
@@ -252,7 +252,7 @@
     "mx_verified": true,
     "mx_host": "0 mx1-us1.ppe-hosted.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:31.049557+00:00"
+    "last_verified_utc": "2026-11-24T15:54:17.101102+00:00"
   },
   {
     "company": "Haydon Building Corp",
@@ -269,7 +269,7 @@
     "mx_verified": true,
     "mx_host": "1 us-smtp-inbound-1.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:31.449810+00:00"
+    "last_verified_utc": "2026-11-24T15:54:17.487899+00:00"
   },
   {
     "company": "FCI Constructors Inc",
@@ -286,7 +286,7 @@
     "mx_verified": true,
     "mx_host": "0 fciol-com.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:31.698375+00:00"
+    "last_verified_utc": "2026-11-24T15:54:17.774017+00:00"
   },
   {
     "company": "Saunders Construction Inc",
@@ -303,7 +303,7 @@
     "mx_verified": true,
     "mx_host": "10 us-smtp-inbound-1.mimecast.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:31.933247+00:00"
+    "last_verified_utc": "2026-11-24T15:54:18.023592+00:00"
   },
   {
     "company": "Juneau Construction Company",
@@ -320,7 +320,7 @@
     "mx_verified": true,
     "mx_host": "0 juneaucc-com.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:32.067490+00:00"
+    "last_verified_utc": "2026-11-24T15:54:18.136792+00:00"
   },
   {
     "company": "Winter Construction",
@@ -337,6 +337,346 @@
     "mx_verified": true,
     "mx_host": "10 winterconstruction-com01e.mail.protection.outlook.com.",
     "delivery_status": "VERIFIED_ACTIVE_MX",
-    "last_verified_utc": "2026-11-24T14:51:32.436508+00:00"
+    "last_verified_utc": "2026-11-24T15:54:18.379232+00:00"
+  },
+  {
+    "company": "Hathaway Dinwiddie Construction",
+    "domain": "hdcco.com",
+    "contact_name": "Greg O'Brien",
+    "role": "Executive VP & Preconstruction Lead",
+    "city": "San Francisco",
+    "state": "CA",
+    "phone": "+1 (415) 986-2718",
+    "target_email": "estimating@hdcco.com",
+    "secondary_email": "info@hdcco.com",
+    "estimated_subs": 65,
+    "specialty": "Commercial High-Rise, Tech Campuses, Life Science",
+    "mx_verified": true,
+    "mx_host": "20 hdcco-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:18.529651+00:00"
+  },
+  {
+    "company": "Webcor Builders",
+    "domain": "webcor.com",
+    "contact_name": "Matt Rossiter",
+    "role": "VP of Operations",
+    "city": "San Francisco",
+    "state": "CA",
+    "phone": "+1 (415) 978-6800",
+    "target_email": "estimating@webcor.com",
+    "secondary_email": "subcontractors@webcor.com",
+    "estimated_subs": 70,
+    "specialty": "Commercial Concrete, Multi-Family, Healthcare",
+    "mx_verified": true,
+    "mx_host": "10 webcor-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:18.559806+00:00"
+  },
+  {
+    "company": "Swinerton Builders",
+    "domain": "swinerton.com",
+    "contact_name": "Ray Haj",
+    "role": "Chief Operating Officer",
+    "city": "Concord",
+    "state": "CA",
+    "phone": "+1 (925) 667-7300",
+    "target_email": "estimating@swinerton.com",
+    "secondary_email": "certs@swinerton.com",
+    "estimated_subs": 80,
+    "specialty": "Commercial Corporate, Mass Timber, Renewable Energy",
+    "mx_verified": true,
+    "mx_host": "10 swinerton-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:18.707402+00:00"
+  },
+  {
+    "company": "McCarthy Building Companies Inc",
+    "domain": "mccarthy.com",
+    "contact_name": "Justin Dent",
+    "role": "Director of Risk Management",
+    "city": "Newport Beach",
+    "state": "CA",
+    "phone": "+1 (949) 851-8383",
+    "target_email": "bids@mccarthy.com",
+    "secondary_email": "info@mccarthy.com",
+    "estimated_subs": 90,
+    "specialty": "Healthcare, Commercial Aviation, Solar",
+    "mx_verified": true,
+    "mx_host": "10 us-smtp-inbound-1.mimecast.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:18.835337+00:00"
+  },
+  {
+    "company": "Rudolph and Sletten Inc",
+    "domain": "rsconstruction.com",
+    "contact_name": "Jonathan Foad",
+    "role": "VP of Operations",
+    "city": "San Carlos",
+    "state": "CA",
+    "phone": "+1 (650) 216-3600",
+    "target_email": "estimating@rsconstruction.com",
+    "secondary_email": "info@rsconstruction.com",
+    "estimated_subs": 55,
+    "specialty": "Biotech, Healthcare, Higher Education",
+    "mx_verified": true,
+    "mx_host": "0 us-smtp-inbound-2.mimecast.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:18.945256+00:00"
+  },
+  {
+    "company": "C.W. Driver Companies",
+    "domain": "cwdriver.com",
+    "contact_name": "Brent Hughes",
+    "role": "Senior VP of Operations",
+    "city": "Pasadena",
+    "state": "CA",
+    "phone": "+1 (626) 351-8800",
+    "target_email": "estimating@cwdriver.com",
+    "secondary_email": "info@cwdriver.com",
+    "estimated_subs": 50,
+    "specialty": "Commercial Entertainment, Education, Civic",
+    "mx_verified": true,
+    "mx_host": "10 cwdriver-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.079344+00:00"
+  },
+  {
+    "company": "Pepper Construction Group",
+    "domain": "pepperconstruction.com",
+    "contact_name": "Stan Pepper",
+    "role": "Chairman & CEO",
+    "city": "Chicago",
+    "state": "IL",
+    "phone": "+1 (312) 266-4300",
+    "target_email": "estimating@pepperconstruction.com",
+    "secondary_email": "certs@pepperconstruction.com",
+    "estimated_subs": 60,
+    "specialty": "Commercial Office, Data Centers, Healthcare",
+    "mx_verified": true,
+    "mx_host": "10 pepperconstruction-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.685768+00:00"
+  },
+  {
+    "company": "Power Construction Company LLC",
+    "domain": "powerconstruction.net",
+    "contact_name": "Terry Graber",
+    "role": "President & Chief Executive",
+    "city": "Chicago",
+    "state": "IL",
+    "phone": "+1 (847) 928-6700",
+    "target_email": "estimating@powerconstruction.net",
+    "secondary_email": "info@powerconstruction.net",
+    "estimated_subs": 55,
+    "specialty": "Healthcare, Hospitality, Luxury Multi-Family",
+    "mx_verified": true,
+    "mx_host": "10 powerconstruction-net.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.794663+00:00"
+  },
+  {
+    "company": "Bulley & Andrews LLC",
+    "domain": "bulley.com",
+    "contact_name": "Allan Bulley",
+    "role": "Chairman & Operations Lead",
+    "city": "Chicago",
+    "state": "IL",
+    "phone": "+1 (773) 235-2433",
+    "target_email": "estimating@bulley.com",
+    "secondary_email": "info@bulley.com",
+    "estimated_subs": 45,
+    "specialty": "Commercial Restoration, Institutional, Industrial",
+    "mx_verified": true,
+    "mx_host": "50 alt4.aspmx.l.google.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.851134+00:00"
+  },
+  {
+    "company": "Mortenson Construction",
+    "domain": "mortenson.com",
+    "contact_name": "Dan Johnson",
+    "role": "President & CEO",
+    "city": "Minneapolis",
+    "state": "MN",
+    "phone": "+1 (763) 522-2100",
+    "target_email": "bids@mortenson.com",
+    "secondary_email": "info@mortenson.com",
+    "estimated_subs": 85,
+    "specialty": "Sports Facilities, Commercial Wind/Solar, Life Science",
+    "mx_verified": true,
+    "mx_host": "10 mxa-00184201.gslb.pphosted.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.931640+00:00"
+  },
+  {
+    "company": "Ryan Companies US Inc",
+    "domain": "ryancompanies.com",
+    "contact_name": "Brian Murray",
+    "role": "Chief Executive Officer",
+    "city": "Minneapolis",
+    "state": "MN",
+    "phone": "+1 (612) 492-4000",
+    "target_email": "estimating@ryancompanies.com",
+    "secondary_email": "info@ryancompanies.com",
+    "estimated_subs": 70,
+    "specialty": "Commercial Logistics, Senior Living, Office",
+    "mx_verified": true,
+    "mx_host": "10 mxa-004bee02.gslb.pphosted.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:19.980951+00:00"
+  },
+  {
+    "company": "Hunter Roberts Construction Group",
+    "domain": "hrcg.com",
+    "contact_name": "James McKenna",
+    "role": "President & CEO",
+    "city": "New York",
+    "state": "NY",
+    "phone": "+1 (212) 321-6800",
+    "target_email": "estimating@hrcg.com",
+    "secondary_email": "info@hrcg.com",
+    "estimated_subs": 60,
+    "specialty": "Commercial Interiors, High-Rise Residential, Cultural",
+    "mx_verified": true,
+    "mx_host": "20 mx2.sphereny.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.240411+00:00"
+  },
+  {
+    "company": "Consigli Construction Co Inc",
+    "domain": "consigli.com",
+    "contact_name": "Matthew Consigli",
+    "role": "President",
+    "city": "Milford",
+    "state": "MA",
+    "phone": "+1 (508) 473-2580",
+    "target_email": "estimating@consigli.com",
+    "secondary_email": "certs@consigli.com",
+    "estimated_subs": 65,
+    "specialty": "Academic, Commercial Historic Preservation, Life Sciences",
+    "mx_verified": true,
+    "mx_host": "0 consigli-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.277228+00:00"
+  },
+  {
+    "company": "Shawmut Design and Construction",
+    "domain": "shawmut.com",
+    "contact_name": "Les Hiscoe",
+    "role": "Chief Executive Officer",
+    "city": "Boston",
+    "state": "MA",
+    "phone": "+1 (617) 622-7000",
+    "target_email": "estimating@shawmut.com",
+    "secondary_email": "info@shawmut.com",
+    "estimated_subs": 60,
+    "specialty": "Luxury Retail, Commercial Hospitality, Higher Ed",
+    "mx_verified": true,
+    "mx_host": "10 shawmut-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.333967+00:00"
+  },
+  {
+    "company": "Gilbane Building Company",
+    "domain": "gilbaneco.com",
+    "contact_name": "Thomas Gilbane",
+    "role": "Chairman & CEO",
+    "city": "Providence",
+    "state": "RI",
+    "phone": "+1 (401) 456-5800",
+    "target_email": "bids@gilbaneco.com",
+    "secondary_email": "info@gilbaneco.com",
+    "estimated_subs": 80,
+    "specialty": "Commercial Real Estate, Federal, Healthcare",
+    "mx_verified": true,
+    "mx_host": "10 gilbaneco-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.378738+00:00"
+  },
+  {
+    "company": "Messer Construction Co",
+    "domain": "messer.com",
+    "contact_name": "Tim Steigerwald",
+    "role": "President & CEO",
+    "city": "Cincinnati",
+    "state": "OH",
+    "phone": "+1 (513) 242-1541",
+    "target_email": "estimating@messer.com",
+    "secondary_email": "info@messer.com",
+    "estimated_subs": 55,
+    "specialty": "Healthcare, Higher Ed, Aviation, Commercial",
+    "mx_verified": true,
+    "mx_host": "0 messer-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.507423+00:00"
+  },
+  {
+    "company": "Brasfield & Gorrie LLC",
+    "domain": "brasfieldgorrie.com",
+    "contact_name": "Jim Gorrie",
+    "role": "Chairman & CEO",
+    "city": "Birmingham",
+    "state": "AL",
+    "phone": "+1 (205) 328-4000",
+    "target_email": "bids@brasfieldgorrie.com",
+    "secondary_email": "subcontractors@brasfieldgorrie.com",
+    "estimated_subs": 85,
+    "specialty": "Commercial Healthcare, Industrial, Mixed-Use",
+    "mx_verified": true,
+    "mx_host": "10 brasfieldgorrie-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.657645+00:00"
+  },
+  {
+    "company": "Hoar Construction LLC",
+    "domain": "hoar.com",
+    "contact_name": "Turner Burton",
+    "role": "President",
+    "city": "Birmingham",
+    "state": "AL",
+    "phone": "+1 (205) 803-2100",
+    "target_email": "estimating@hoar.com",
+    "secondary_email": "info@hoar.com",
+    "estimated_subs": 50,
+    "specialty": "Commercial Retail, Multi-Family, Civic",
+    "mx_verified": true,
+    "mx_host": "10 mxa-008ba601.gslb.pphosted.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.764390+00:00"
+  },
+  {
+    "company": "GLY Construction Inc",
+    "domain": "gly.com",
+    "contact_name": "Mark Kane",
+    "role": "President & CEO",
+    "city": "Bellevue",
+    "state": "WA",
+    "phone": "+1 (425) 451-8877",
+    "target_email": "estimating@gly.com",
+    "secondary_email": "info@gly.com",
+    "estimated_subs": 50,
+    "specialty": "Tech Commercial, Life Science, Multi-Family",
+    "mx_verified": true,
+    "mx_host": "10 gly-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:20.869498+00:00"
+  },
+  {
+    "company": "Lease Crutcher Lewis",
+    "domain": "lewisbuilds.com",
+    "contact_name": "Bart Ricketts",
+    "role": "Chief Executive Officer",
+    "city": "Seattle",
+    "state": "WA",
+    "phone": "+1 (206) 622-0500",
+    "target_email": "estimating@lewisbuilds.com",
+    "secondary_email": "info@lewisbuilds.com",
+    "estimated_subs": 55,
+    "specialty": "Commercial Office, Education, Data Centers",
+    "mx_verified": true,
+    "mx_host": "0 lewisbuilds-com.mail.protection.outlook.com.",
+    "delivery_status": "VERIFIED_ACTIVE_MX",
+    "last_verified_utc": "2026-11-24T15:54:21.025772+00:00"
   }
 ]

@@ -178,5 +178,185 @@
     "city": "Atlanta",
     "state": "GA",
     "notes": "Hospitality, Commercial Historic Renovation (~40 active trade subs)"
+  },
+  {
+    "company": "Hathaway Dinwiddie Construction",
+    "contact_name": "Greg O'Brien",
+    "role": "Executive VP & Preconstruction Lead",
+    "email": "estimating@hdcco.com",
+    "city": "San Francisco",
+    "state": "CA",
+    "notes": "Commercial High-Rise, Tech Campuses, Life Science (~65 active trade subs)"
+  },
+  {
+    "company": "Webcor Builders",
+    "contact_name": "Matt Rossiter",
+    "role": "VP of Operations",
+    "email": "estimating@webcor.com",
+    "city": "San Francisco",
+    "state": "CA",
+    "notes": "Commercial Concrete, Multi-Family, Healthcare (~70 active trade subs)"
+  },
+  {
+    "company": "Swinerton Builders",
+    "contact_name": "Ray Haj",
+    "role": "Chief Operating Officer",
+    "email": "estimating@swinerton.com",
+    "city": "Concord",
+    "state": "CA",
+    "notes": "Commercial Corporate, Mass Timber, Renewable Energy (~80 active trade subs)"
+  },
+  {
+    "company": "McCarthy Building Companies Inc",
+    "contact_name": "Justin Dent",
+    "role": "Director of Risk Management",
+    "email": "bids@mccarthy.com",
+    "city": "Newport Beach",
+    "state": "CA",
+    "notes": "Healthcare, Commercial Aviation, Solar (~90 active trade subs)"
+  },
+  {
+    "company": "Rudolph and Sletten Inc",
+    "contact_name": "Jonathan Foad",
+    "role": "VP of Operations",
+    "email": "estimating@rsconstruction.com",
+    "city": "San Carlos",
+    "state": "CA",
+    "notes": "Biotech, Healthcare, Higher Education (~55 active trade subs)"
+  },
+  {
+    "company": "C.W. Driver Companies",
+    "contact_name": "Brent Hughes",
+    "role": "Senior VP of Operations",
+    "email": "estimating@cwdriver.com",
+    "city": "Pasadena",
+    "state": "CA",
+    "notes": "Commercial Entertainment, Education, Civic (~50 active trade subs)"
+  },
+  {
+    "company": "Pepper Construction Group",
+    "contact_name": "Stan Pepper",
+    "role": "Chairman & CEO",
+    "email": "estimating@pepperconstruction.com",
+    "city": "Chicago",
+    "state": "IL",
+    "notes": "Commercial Office, Data Centers, Healthcare (~60 active trade subs)"
+  },
+  {
+    "company": "Power Construction Company LLC",
+    "contact_name": "Terry Graber",
+    "role": "President & Chief Executive",
+    "email": "estimating@powerconstruction.net",
+    "city": "Chicago",
+    "state": "IL",
+    "notes": "Healthcare, Hospitality, Luxury Multi-Family (~55 active trade subs)"
+  },
+  {
+    "company": "Bulley & Andrews LLC",
+    "contact_name": "Allan Bulley",
+    "role": "Chairman & Operations Lead",
+    "email": "estimating@bulley.com",
+    "city": "Chicago",
+    "state": "IL",
+    "notes": "Commercial Restoration, Institutional, Industrial (~45 active trade subs)"
+  },
+  {
+    "company": "Mortenson Construction",
+    "contact_name": "Dan Johnson",
+    "role": "President & CEO",
+    "email": "bids@mortenson.com",
+    "city": "Minneapolis",
+    "state": "MN",
+    "notes": "Sports Facilities, Commercial Wind/Solar, Life Science (~85 active trade subs)"
+  },
+  {
+    "company": "Ryan Companies US Inc",
+    "contact_name": "Brian Murray",
+    "role": "Chief Executive Officer",
+    "email": "estimating@ryancompanies.com",
+    "city": "Minneapolis",
+    "state": "MN",
+    "notes": "Commercial Logistics, Senior Living, Office (~70 active trade subs)"
+  },
+  {
+    "company": "Hunter Roberts Construction Group",
+    "contact_name": "James McKenna",
+    "role": "President & CEO",
+    "email": "estimating@hrcg.com",
+    "city": "New York",
+    "state": "NY",
+    "notes": "Commercial Interiors, High-Rise Residential, Cultural (~60 active trade subs)"
+  },
+  {
+    "company": "Consigli Construction Co Inc",
+    "contact_name": "Matthew Consigli",
+    "role": "President",
+    "email": "estimating@consigli.com",
+    "city": "Milford",
+    "state": "MA",
+    "notes": "Academic, Commercial Historic Preservation, Life Sciences (~65 active trade subs)"
+  },
+  {
+    "company": "Shawmut Design and Construction",
+    "contact_name": "Les Hiscoe",
+    "role": "Chief Executive Officer",
+    "email": "estimating@shawmut.com",
+    "city": "Boston",
+    "state": "MA",
+    "notes": "Luxury Retail, Commercial Hospitality, Higher Ed (~60 active trade subs)"
+  },
+  {
+    "company": "Gilbane Building Company",
+    "contact_name": "Thomas Gilbane",
+    "role": "Chairman & CEO",
+    "email": "bids@gilbaneco.com",
+    "city": "Providence",
+    "state": "RI",
+    "notes": "Commercial Real Estate, Federal, Healthcare (~80 active trade subs)"
+  },
+  {
+    "company": "Messer Construction Co",
+    "contact_name": "Tim Steigerwald",
+    "role": "President & CEO",
+    "email": "estimating@messer.com",
+    "city": "Cincinnati",
+    "state": "OH",
+    "notes": "Healthcare, Higher Ed, Aviation, Commercial (~55 active trade subs)"
+  },
+  {
+    "company": "Brasfield & Gorrie LLC",
+    "contact_name": "Jim Gorrie",
+    "role": "Chairman & CEO",
+    "email": "bids@brasfieldgorrie.com",
+    "city": "Birmingham",
+    "state": "AL",
+    "notes": "Commercial Healthcare, Industrial, Mixed-Use (~85 active trade subs)"
+  },
+  {
+    "company": "Hoar Construction LLC",
+    "contact_name": "Turner Burton",
+    "role": "President",
+    "email": "estimating@hoar.com",
+    "city": "Birmingham",
+    "state": "AL",
+    "notes": "Commercial Retail, Multi-Family, Civic (~50 active trade subs)"
+  },
+  {
+    "company": "GLY Construction Inc",
+    "contact_name": "Mark Kane",
+    "role": "President & CEO",
+    "email": "estimating@gly.com",
+    "city": "Bellevue",
+    "state": "WA",
+    "notes": "Tech Commercial, Life Science, Multi-Family (~50 active trade subs)"
+  },
+  {
+    "company": "Lease Crutcher Lewis",
+    "contact_name": "Bart Ricketts",
+    "role": "Chief Executive Officer",
+    "email": "estimating@lewisbuilds.com",
+    "city": "Seattle",
+    "state": "WA",
+    "notes": "Commercial Office, Education, Data Centers (~55 active trade subs)"
   }
 ]

@@ -12,3 +12,5 @@ test_auth_*.json
 .env
 *.env
 outreach_sent.json
+outreach_progress.json
+outreach_daemon.log
