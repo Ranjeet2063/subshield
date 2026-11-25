@@ -529,5 +529,185 @@
     "city": "Chesterfield",
     "state": "MO",
     "notes": "Senior Living, Commercial Retail, Warehouse (~50 active trade subs)"
+  },
+  {
+    "company": "Holder Construction",
+    "contact_name": "Michael Cassidy",
+    "role": "VP Operations",
+    "email": "bids@holderconstruction.com",
+    "city": "Atlanta",
+    "state": "GA",
+    "notes": "Mission Critical, Data Centers, Corporate Campuses (~70 active trade subs)"
+  },
+  {
+    "company": "Batson-Cook Construction",
+    "contact_name": "Randy Hall",
+    "role": "CEO & President",
+    "email": "estimating@batson-cook.com",
+    "city": "Atlanta",
+    "state": "GA",
+    "notes": "Healthcare, Hospitality, Higher Education (~55 active trade subs)"
+  },
+  {
+    "company": "New South Construction",
+    "contact_name": "Huntly Gordon",
+    "role": "President",
+    "email": "estimating@newsouthconstruction.com",
+    "city": "Atlanta",
+    "state": "GA",
+    "notes": "Commercial Office, Education, Athletic Facilities (~45 active trade subs)"
+  },
+  {
+    "company": "Reeves Young",
+    "contact_name": "Eric Young",
+    "role": "CEO",
+    "email": "estimating@reevesyoung.com",
+    "city": "Sugar Hill",
+    "state": "GA",
+    "notes": "Heavy Civil, Commercial Building, Industrial (~50 active trade subs)"
+  },
+  {
+    "company": "Barnhill Contracting Company",
+    "contact_name": "Robert Barnhill III",
+    "role": "President",
+    "email": "estimating@barnhillcontracting.com",
+    "city": "Raleigh",
+    "state": "NC",
+    "notes": "Commercial Building, Life Sciences, Civil Infrastructure (~60 active trade subs)"
+  },
+  {
+    "company": "Rodgers Builders Inc",
+    "contact_name": "Pat Rodgers",
+    "role": "CEO & President",
+    "email": "estimating@rodgersbuilders.com",
+    "city": "Charlotte",
+    "state": "NC",
+    "notes": "Healthcare, Commercial, Cultural, Institutional (~55 active trade subs)"
+  },
+  {
+    "company": "Clancy & Theys Construction",
+    "contact_name": "Baker Glasgow",
+    "role": "President",
+    "email": "estimating@clancytheys.com",
+    "city": "Raleigh",
+    "state": "NC",
+    "notes": "Life Sciences, Technology, Multi-Family, Warehouse (~65 active trade subs)"
+  },
+  {
+    "company": "Kitchell Corporation",
+    "contact_name": "Wendy Cohen",
+    "role": "President & CEO",
+    "email": "estimating@kitchell.com",
+    "city": "Phoenix",
+    "state": "AZ",
+    "notes": "Healthcare, Native American Gaming, Commercial (~70 active trade subs)"
+  },
+  {
+    "company": "Sundt Construction Inc",
+    "contact_name": "Mike Hoover",
+    "role": "President & CEO",
+    "email": "estimating@sundt.com",
+    "city": "Tempe",
+    "state": "AZ",
+    "notes": "Building, Transportation, Industrial, Water (~80 active trade subs)"
+  },
+  {
+    "company": "CORE Construction",
+    "contact_name": "Jim Jacobs",
+    "role": "CEO",
+    "email": "estimating@coreconstruction.com",
+    "city": "Phoenix",
+    "state": "AZ",
+    "notes": "K-12, Municipal, Commercial Office, Public Safety (~65 active trade subs)"
+  },
+  {
+    "company": "GH Phipps Construction",
+    "contact_name": "Rich Robinson",
+    "role": "President",
+    "email": "estimating@ghphipps.com",
+    "city": "Greenwood Village",
+    "state": "CO",
+    "notes": "Healthcare, K-12, Higher Ed, High-Tech Laboratories (~50 active trade subs)"
+  },
+  {
+    "company": "Haselden Construction",
+    "contact_name": "Byron Haselden",
+    "role": "CEO & President",
+    "email": "estimating@haselden.com",
+    "city": "Centennial",
+    "state": "CO",
+    "notes": "Commercial, Healthcare, Education, Resort Facilities (~55 active trade subs)"
+  },
+  {
+    "company": "Howell Construction",
+    "contact_name": "Roger Howell",
+    "role": "President",
+    "email": "estimating@howellconst.com",
+    "city": "Denver",
+    "state": "CO",
+    "notes": "Life Sciences, Commercial Interiors, Healthcare (~40 active trade subs)"
+  },
+  {
+    "company": "Kraus-Anderson Construction",
+    "contact_name": "Al Gerhardt",
+    "role": "President & COO",
+    "email": "estimating@krausanderson.com",
+    "city": "Minneapolis",
+    "state": "MN",
+    "notes": "Healthcare, Education, Commercial, Industrial (~60 active trade subs)"
+  },
+  {
+    "company": "McGough Construction",
+    "contact_name": "Tom McGough Jr",
+    "role": "President & CEO",
+    "email": "estimating@mcgough.com",
+    "city": "St. Paul",
+    "state": "MN",
+    "notes": "Corporate, Life Science, Cultural, High-Rise (~65 active trade subs)"
+  },
+  {
+    "company": "LF Driscoll",
+    "contact_name": "Mack Stulb",
+    "role": "President",
+    "email": "estimating@lfdriscoll.com",
+    "city": "Bala Cynwyd",
+    "state": "PA",
+    "notes": "Healthcare, Sports Arenas, Cultural Institutions, Commercial (~75 active trade subs)"
+  },
+  {
+    "company": "PJ Dick Inc",
+    "contact_name": "Clifford Rowe Jr",
+    "role": "CEO",
+    "email": "estimating@pjdick.com",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "notes": "Commercial, Industrial, Institutional, Civil (~60 active trade subs)"
+  },
+  {
+    "company": "Mascaro Construction Co LP",
+    "contact_name": "John Mascaro Jr",
+    "role": "President",
+    "email": "estimating@mascaroconstruction.com",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "notes": "Building, Civil, Industrial, Power & Infrastructure (~50 active trade subs)"
+  },
+  {
+    "company": "Shiel Sexton Company Inc",
+    "contact_name": "Kevin Hunt",
+    "role": "President",
+    "email": "estimating@shielsexton.com",
+    "city": "Indianapolis",
+    "state": "IN",
+    "notes": "Commercial, Life Science, Higher Ed, Public (~50 active trade subs)"
+  },
+  {
+    "company": "Kjellstrom and Lee Inc",
+    "contact_name": "Harry Lee",
+    "role": "President",
+    "email": "estimating@kjellstromandlee.com",
+    "city": "Richmond",
+    "state": "VA",
+    "notes": "Healthcare, Higher Ed, Corporate Commercial, Cultural (~45 active trade subs)"
   }
 ]
